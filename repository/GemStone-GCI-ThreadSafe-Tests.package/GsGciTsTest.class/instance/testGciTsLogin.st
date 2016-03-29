@@ -3,5 +3,5 @@ testGciTsLogin
 	"execute without error"
 
 	| session |
-	session := GsGciTsSession login: GsGciSessionDescription example.
+	session := GsGciTsSession login: GsGciSessionDescription testingSessionDescription.
 	session logout

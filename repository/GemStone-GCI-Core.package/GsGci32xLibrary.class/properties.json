@@ -1,0 +1,14 @@
+{
+	"category" : "GemStone-GCI-Core-Libraries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"NullPtr" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mutex" ],
+	"name" : "GsGci32xLibrary",
+	"pools" : [
+		 ],
+	"super" : "ExternalLibrary",
+	"type" : "normal" }

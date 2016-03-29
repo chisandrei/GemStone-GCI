@@ -1,0 +1,14 @@
+{
+	"category" : "GemStone-GCI-Core-Objects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"OopTypes" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GsGciOopType",
+	"pools" : [
+		 ],
+	"super" : "ExternalStructure",
+	"type" : "normal" }

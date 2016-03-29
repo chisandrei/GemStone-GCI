@@ -6,7 +6,6 @@ os:
 
 smalltalk:
   - GemStone-3.3.0
-  - GemStone-3.2.13
 
 script:
   - $SMALLTALK_CI_HOME/run.sh # --debug

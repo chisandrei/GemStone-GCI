@@ -6,7 +6,7 @@ SmalltalkCISpec {
       #load : [ 'Tests' ],
       #directory : 'repository',
       #onWarningLog : true,
-      #platforms : [ #gemstone ]
+      #platforms : [ #gemstone, #pharo ]
     }
   ],
   #testing : {

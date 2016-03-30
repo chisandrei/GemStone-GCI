@@ -5,7 +5,7 @@
 
 # Prerequisites
 
-For the moment, you must grab a Pharo 3.0 image and vm from [here](files.pharo.org).
+For the moment, you must grab a Pharo 3.0 image and vm from [here](files.pharo.org). Then, copy the `libgci*` files from the Pharo VM of a tODE client image into the just downloaded Pharo 3.0 VM. 
 
 # Installation
 

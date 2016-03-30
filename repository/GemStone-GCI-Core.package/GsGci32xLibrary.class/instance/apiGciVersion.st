@@ -13,5 +13,5 @@ apiGciVersion
   EXTERN_GCI_DEC(const char*)
 GciVersion(void);
 "
-	<apicall: char* 'GciVersion' (void) >
-	^self externalCallFailed
+	
+	^ self ffiCall: #( String GciVersion() )

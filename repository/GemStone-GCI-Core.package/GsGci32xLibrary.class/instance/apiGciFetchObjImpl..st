@@ -16,5 +16,5 @@ apiGciFetchObjImpl: theObject
   EXTERN_GCI_DEC(int)
 GciFetchObjImpl(OopType theObject);
 "
-	<apicall: long 'GciFetchObjImpl' (GsGciOopType) >
-	^self externalCallFailed
+
+	^ self ffiCall: #( long GciFetchObjImpl(GsGciOopType theObject) )

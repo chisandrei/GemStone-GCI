@@ -17,5 +17,4 @@ apiGciCommit
   EXTERN_GCI_DEC(BoolType)
 GciCommit(void);
 "
-	<apicall: bool 'GciCommit' (void) >
-	^self externalCallFailed
+	^ self ffiCall: #( Boolean GciCommit() )

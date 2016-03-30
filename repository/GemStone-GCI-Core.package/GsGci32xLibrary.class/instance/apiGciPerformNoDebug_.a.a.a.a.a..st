@@ -34,5 +34,5 @@ GciPerformNoDebug( OopType receiver, const char selector[],
 GciPerformNoDebug_( OopType receiver, const char selector[],
         const OopType args[], int numArgs, int flags, ushort environmentId);
 "
-	<apicall: GsGciOopType 'GciPerformNoDebug_' (GsGciOopType char* ulong long long ushort) >
-	^self externalCallFailed
+	
+	^ self ffiCall: #( GsGciOopType GciPerformNoDebug_(GsGciOopType receiver, String selectorString, ulong args, long numArgs, long flags, ushort environmentId) )

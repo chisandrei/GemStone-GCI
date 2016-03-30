@@ -22,5 +22,5 @@ apiGciHardBreak
   GCI_ALIGN_STACK EXTERN_GCI_DEC(void)
 GciHardBreak(void);
 "
-	<apicall: void 'GciHardBreak' () >
-	^self externalCallFailed
+
+	^ self ffiCall: #( void GciHardBreak() )

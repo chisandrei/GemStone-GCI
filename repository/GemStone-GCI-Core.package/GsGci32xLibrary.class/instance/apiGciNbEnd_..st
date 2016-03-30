@@ -35,8 +35,9 @@ apiGciNbEnd_: vOut
   EXTERN_GCI_DEC(GciNbProgressEType)
 GciNbEnd_(int64 *vOut);
 "
-	<apicall: short 'GciNbEnd_' (ulong) >
-	^self externalCallFailed
+	
+	^ self ffiCall: #( short GciNbEnd_(ulong vOut) )
+	
 "/* Nonblocking status constants ,
  *  must agree with hydra GciCalls.java , do not reorder */
 typedef enum {

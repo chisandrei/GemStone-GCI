@@ -45,8 +45,10 @@ GciExecuteStrFromContextDbg_(
   OopType contextObject, OopType symbolList,
   int flags,  ushort environmentId );
 "
-	<apicall: GsGciOopType 'GciExecuteStrFromContextDbg_' (char* ulonglong GsGciOopType GsGciOopType GsGciOopType ulonglong ushort) >
-	^self externalCallFailed
+
+	^ self ffiCall: #( GsGciOopType GciExecuteStrFromContextDbg_(char* source, ulonglong sourceSize, GsGciOopType sourceClassOopType, GsGciOopType contextObjectOopType, GsGciOopType symbolListOopType, ulonglong flags, ushort environmentId) )
+	
+	
 "enum { 
   GCI_PERFORM_FLAG_ENABLE_DEBUG = 1,  
    /* make like GciPerform() with respect to debugging. default is debugger is

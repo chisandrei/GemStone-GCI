@@ -8,5 +8,5 @@ apiGciNbBegin
   EXTERN_GCI_DEC(void)
 GciNbBegin(void);
 "
-	<apicall: void 'GciNbBegin' (void) >
-	^self externalCallFailed
+	
+	^ self ffiCall: #( void GciNbBegin() )

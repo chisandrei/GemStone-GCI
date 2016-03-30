@@ -13,5 +13,5 @@ apiGciGetSessionId
   GCI_ALIGN_STACK EXTERN_GCI_DEC(GciSessionIdType)
 GciGetSessionId(void);
 "
-	<apicall: long 'GciGetSessionId' (void) >
-	^self externalCallFailed
+	
+	^ self ffiCall: #( long GciGetSessionId() )

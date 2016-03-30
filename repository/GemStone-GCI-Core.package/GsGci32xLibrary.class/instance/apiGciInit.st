@@ -12,5 +12,5 @@ apiGciInit
   EXTERN_GCI_DEC(BoolType)
 GciInit(void);
 "
-	<apicall: bool 'GciInit' (void) >
-	^self externalCallFailed
+
+	^ self ffiCall: #( Boolean GciInit() )

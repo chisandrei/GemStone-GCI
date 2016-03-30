@@ -15,7 +15,7 @@ baseline: spec
         package: 'GemStone-GCI-Core'
           with: [ 
               spec
-                requires: #('FFI' 'Ston');
+                requires: #('Ston');
                 postLoadDoIt: #'initGci32xErrSType' ];
         package: 'GemStone-GCI-Tests'
           with: [ spec requires: 'GemStone-GCI-Core' ];

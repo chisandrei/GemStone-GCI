@@ -16,5 +16,5 @@ apiGciFetchClass: theObject
   GCI_ALIGN_STACK EXTERN_GCI_DEC(OopType) 
 GciFetchClass(OopType theObject);
 "
-	<apicall: GsGciOopType 'GciFetchClass' (GsGciOopType) >
-	^self externalCallFailed
+
+	^ self ffiCall: #( GsGciOopType GciFetchClass(GsGciOopType theObject) )

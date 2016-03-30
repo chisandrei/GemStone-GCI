@@ -18,5 +18,5 @@ apiGciI64ToOop: anInteger
   EXTERN_GCI_DEC(OopType)
 GciI64ToOop(int64 arg);
 "
-	<apicall: GsGciOopType 'GciI64ToOop' (longlong) >
-	^self externalCallFailed
+
+	^ self ffiCall: #( GsGciOopType GciI64ToOop(longlong anInteger) )

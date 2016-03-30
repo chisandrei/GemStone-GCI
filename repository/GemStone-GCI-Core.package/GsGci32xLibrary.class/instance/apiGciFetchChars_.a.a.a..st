@@ -20,5 +20,5 @@ GciFetchChars_(
     );
 
 "
-	<apicall: ulonglong 'GciFetchChars_' (GsGciOopType ulonglong void* ulonglong) >
-	^self externalCallFailed
+
+	^ self ffiCall: #( ulonglong GciFetchChars_(GsGciOopType theObject, ulonglong startIndex, void* cString, ulonglong maxSize) )

@@ -20,5 +20,5 @@ apiGciLogin: userName a: password
   EXTERN_GCI_DEC(BoolType)
 GciLogin(const char gemstoneUsername[], const char gemstonePassword[]);
 "
-	<apicall: bool 'GciLogin' (char* char*) >
-	^self externalCallFailed
+
+	^ self ffiCall: #( Boolean GciLogin(String userName, String password) )

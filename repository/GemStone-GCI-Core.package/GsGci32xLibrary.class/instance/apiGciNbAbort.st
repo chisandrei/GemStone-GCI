@@ -8,5 +8,5 @@ apiGciNbAbort
   EXTERN_GCI_DEC(void)
 GciNbAbort(void);
 "
-	<apicall: void 'GciNbAbort' (void) >
-	^self externalCallFailed
+
+	^ self ffiCall: #( void GciNbAbort() )

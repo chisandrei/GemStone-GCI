@@ -11,6 +11,5 @@ apiGciSetSessionId: anInteger
   GCI_ALIGN_STACK EXTERN_GCI_DEC(void)
 GciSetSessionId(GciSessionIdType sessionId);
 "
-	<apicall: void 'GciSetSessionId' (long) >
-	^self externalCallFailed.
 	
+	^ self ffiCall: #( void GciSetSessionId(long anInteger) )

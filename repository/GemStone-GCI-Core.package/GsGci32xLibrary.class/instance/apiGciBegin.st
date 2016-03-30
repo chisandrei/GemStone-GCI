@@ -11,5 +11,5 @@ apiGciBegin
   EXTERN_GCI_DEC(void)
 GciBegin(void);
 "
-	<apicall: void 'GciBegin' (void) >
-	^self externalCallFailed
+	^ self ffiCall: #( void GciBegin() )
+	

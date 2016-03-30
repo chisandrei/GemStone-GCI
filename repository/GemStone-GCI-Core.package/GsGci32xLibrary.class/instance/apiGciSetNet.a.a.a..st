@@ -26,5 +26,5 @@ GciSetNet(
   const char GemService[]
   );
 "
-	<apicall: void 'GciSetNet' (char* char* char* char*) >
-	^self externalCallFailed
+	
+	^ self ffiCall: #( void GciSetNet(String stoneName, String hostUserID, String hostPassword, String gemService) )

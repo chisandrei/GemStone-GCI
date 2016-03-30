@@ -8,5 +8,5 @@ apiGciNbCommit
   EXTERN_GCI_DEC(void)
 GciNbCommit(void);
 "
-	<apicall: void 'GciNbCommit' (void) >
-	^self externalCallFailed
+	
+	^ self ffiCall: #( void GciNbCommit() )

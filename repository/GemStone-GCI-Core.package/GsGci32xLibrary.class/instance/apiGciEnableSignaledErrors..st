@@ -34,5 +34,5 @@ apiGciEnableSignaledErrors: newState
   EXTERN_GCI_DEC(BoolType)
 GciEnableSignaledErrors(BoolType newState);
 "
-	<apicall: bool 'GciEnableSignaledErrors' (bool) >
-	^self externalCallFailed
+	^ self ffiCall: #( Boolean GciEnableSignaledErrors(Boolean newState) )
+	

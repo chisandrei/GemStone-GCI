@@ -12,5 +12,4 @@ apiGciAbort
   EXTERN_GCI_DEC(void)
 GciAbort(void);
 "
-	<apicall: void 'GciAbort' (void) >
-	^self externalCallFailed
+	^ self ffiCall: #( void GciAbort() )

@@ -32,5 +32,4 @@ apiGciPollForSignal
   GCI_ALIGN_STACK EXTERN_GCI_DEC(BoolType)
 GciPollForSignal(void);
 "
-	<apicall: bool 'GciPollForSignal' (void) >
-	^self externalCallFailed
+	^ self ffiCall: #( Boolean GciPollForSignal() )

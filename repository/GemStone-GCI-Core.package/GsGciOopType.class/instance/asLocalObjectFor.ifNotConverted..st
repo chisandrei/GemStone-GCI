@@ -1,14 +1,14 @@
 converting
-asLocalObjectFor: aTugricGciSession ifNotConverted: notConvertedBlock
+asLocalObjectFor: aGciSession ifNotConverted: notConvertedBlock
 	"we can create local objects for specials and byte objects"
 
-	aTugricGciSession gciLibrary
+	aGciSession gciLibrary
 		critical: [ :lib | 
 			| type |
-			lib apiGciSetSessionId: aTugricGciSession gciSessionNumber.
+			lib apiGciSetSessionId: aGciSession gciSessionNumber.
 			type := lib apiGciFetchObjImpl: self.
 			type = 1
-				ifTrue: [ ^ self asLocalByteObj: aTugricGciSession ].
+				ifTrue: [ ^ self asLocalByteObj: aGciSession ].
 			type = 3
 				ifTrue: [ ^ self asLocalSpecialObj ].
 			^ notConvertedBlock cull: self ]

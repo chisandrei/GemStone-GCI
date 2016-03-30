@@ -1,3 +1,3 @@
 converting
-asLocalObjectFor: aTugrikGciSession ifNotConverted: ignored
-	^ self asLocalObjectFor: aTugrikGciSession
+asLocalObjectFor: aGciSession ifNotConverted: ignored
+	^ self asLocalObjectFor: aGciSession

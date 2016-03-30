@@ -1,3 +1,3 @@
 *GemStone-GCI-Core
-localObjectToGciOopType: aTugricGciSession
-	^ aTugricGciSession gciNewWideSymbol: self
+localObjectToGciOopType: aGciSession
+	^ aGciSession gciNewWideSymbol: self

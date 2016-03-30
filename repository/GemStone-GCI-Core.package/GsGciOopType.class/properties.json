@@ -10,5 +10,5 @@
 	"name" : "GsGciOopType",
 	"pools" : [
 		 ],
-	"super" : "ExternalStructure",
+	"super" : "FFIExternalStructure",
 	"type" : "normal" }

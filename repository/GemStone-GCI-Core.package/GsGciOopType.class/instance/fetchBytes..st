@@ -1,9 +1,9 @@
 private
-fetchBytes: aTugricGciSession
+fetchBytes: aGciSession
 	| bytes size result |
-	size := aTugricGciSession gciLibrary apiGciFetchSize_: self.
+	size := aGciSession gciLibrary apiGciFetchSize_: self.
 	bytes := ByteArray new: size.
-	result := aTugricGciSession gciLibrary
+	result := aGciSession gciLibrary
 		apiGciFetchBytes_: self
 		a: 1
 		a: bytes

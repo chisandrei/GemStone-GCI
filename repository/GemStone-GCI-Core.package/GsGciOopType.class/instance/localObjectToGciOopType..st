@@ -1,3 +1,3 @@
 converting
-localObjectToGciOopType: aTugricGciSession
+localObjectToGciOopType: aGciSession
 	^ self

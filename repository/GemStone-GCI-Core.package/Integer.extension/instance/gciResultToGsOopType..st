@@ -1,3 +1,3 @@
 *GemStone-GCI-Core
-gciResultToGsOopType: aTugrikGciSession
+gciResultToGsOopType: aGciSession
 	^ GsGciOopType fromInteger: self

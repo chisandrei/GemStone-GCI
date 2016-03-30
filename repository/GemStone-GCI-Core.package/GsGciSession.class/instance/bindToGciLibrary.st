@@ -12,7 +12,7 @@ bindToGciLibrary
 	gciLibraryVersion := library apiGciVersion.
 	(gciLibraryVersion beginsWith: sessionDescription gemstoneVersion)
 		ifFalse: [ 
-			"All Tugric sessions must be using the same GemStone version - for now"
+			"All sessions must be using the same GemStone version - for now"
 			self
 				error:
 					'Mismatched GemStone version. library version: ' , gciLibraryVersion printString , ' sessionDescription version: '

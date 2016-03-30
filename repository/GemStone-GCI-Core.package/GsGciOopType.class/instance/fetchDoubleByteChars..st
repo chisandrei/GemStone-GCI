@@ -1,7 +1,7 @@
 private
-fetchDoubleByteChars: aTugricGciSession
+fetchDoubleByteChars: aGciSession
 	| bytes |
-	bytes := self fetchBytes: aTugricGciSession.
+	bytes := self fetchBytes: aGciSession.
 	^ WideString
 		streamContents: [ :s | 
 			1 to: bytes size by: 2 do: [ :i | 

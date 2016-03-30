@@ -1,9 +1,9 @@
 private
-fetchChars: aTugricGciSession
+fetchChars: aGciSession
 	| string size result |
-	size := aTugricGciSession gciLibrary apiGciFetchSize_: self.
+	size := aGciSession gciLibrary apiGciFetchSize_: self.
 	string := String new: size + 1.
-	result := aTugricGciSession gciLibrary
+	result := aGciSession gciLibrary
 		apiGciFetchChars_: self
 		a: 1
 		a: string

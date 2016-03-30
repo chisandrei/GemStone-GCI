@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"fields" : "dkh 2/15/2016 10:57",
+		"fieldsDesc" : "MarianoMartinezPeck 3/30/2016 12:39",
 		"fromInteger:" : "dkh 2/13/2016 14:55",
 		"initialize" : "dkh 3/4/2016 10:01",
 		"oopClassByteArray" : "dkh 3/3/2016 07:20",
@@ -48,4 +48,6 @@
 		"oopClassUnicode7oopClassUnicode7" : "dkh 2/18/2016 15:43",
 		"oopMaxSmallInteger" : "dkh 2/14/2016 07:32",
 		"oopNil" : "dkh 2/14/2016 07:32",
+		"oopType" : "MarianoMartinezPeck 3/30/2016 12:40",
+		"oopType:" : "MarianoMartinezPeck 3/30/2016 12:40",
 		"printOn:" : "dkh 2/13/2016 18:12" } }

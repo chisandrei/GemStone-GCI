@@ -1,3 +1,4 @@
-accessing
+accessing structure variables
 exceptionObj
-	^GsGciOopType fromHandle: (handle structAt: 17 length: 8)
+	"This method was automatically generated"
+	^GsGciOopType fromHandle: (handle referenceStructAt: 17 length: 8)

@@ -1,3 +1,4 @@
-accessing
+accessing structure variables
 arg10
-	^GsGciOopType fromHandle: (handle structAt: 49 length: 8)
+	"This method was automatically generated"
+	^GsGciOopType fromHandle: (handle referenceStructAt: 97 length: 8)

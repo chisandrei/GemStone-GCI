@@ -10,4 +10,8 @@ login: aSessionDescription
 		apiGciLogin: sessionDescription userId a: sessionDescription password.
 	result
 		ifTrue: [ gciSessionNumber := self gciLibrary apiGciGetSessionId ]
-		ifFalse: [ self halt: 'handle failed login' ]
+		ifFalse: [ 
+			"(self gciLibrary apiGciErr: GsGci32xErrSType new) inspect.  "
+			self halt: 'handle failed login'
+			
+			 ]

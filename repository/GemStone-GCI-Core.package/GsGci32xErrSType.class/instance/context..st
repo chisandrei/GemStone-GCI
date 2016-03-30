@@ -1,4 +1,4 @@
 accessing structure variables
-message
+context: anObject
 	"This method was automatically generated"
-	^handle unsignedCharAt: 114
+	handle structAt: 9 put: anObject getHandle length: 8.

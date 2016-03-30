@@ -1,4 +1,4 @@
 accessing structure variables
-message
+reason: anObject
 	"This method was automatically generated"
-	^handle unsignedCharAt: 114
+	handle unsignedCharAt: 115 put: anObject

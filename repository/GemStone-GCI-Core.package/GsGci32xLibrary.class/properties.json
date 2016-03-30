@@ -6,9 +6,10 @@
 		"NullPtr" ],
 	"commentStamp" : "",
 	"instvars" : [
+		"libraryName",
 		"mutex" ],
 	"name" : "GsGci32xLibrary",
 	"pools" : [
 		 ],
-	"super" : "ExternalLibrary",
+	"super" : "Object",
 	"type" : "normal" }

@@ -1,0 +1,3 @@
+initialization
+ffiLibraryName
+  ^ libraryName 

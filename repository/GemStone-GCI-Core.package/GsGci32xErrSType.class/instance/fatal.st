@@ -1,5 +1,4 @@
-accessing
+accessing structure variables
 fatal
-	"not sure that this is defined correctly"
-
-	^ handle unsignedCharAt: 105
+	"This method was automatically generated"
+	^handle unsignedByteAt: 113

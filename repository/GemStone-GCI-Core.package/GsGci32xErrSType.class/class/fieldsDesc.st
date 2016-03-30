@@ -1,5 +1,5 @@
 field definition
-fields
+fieldsDesc
    "self defineFields"
    "self compileFields"
    "self byteSize"
@@ -17,22 +17,22 @@ public:
   char          reason[GCI_ERR_reasonSize + 1];
 "
 	^#(
-		(category #GsGciOopType)
-		(context #GsGciOopType) 
-		(exceptionObj #GsGciOopType) 
-		(arg1 #GsGciOopType) 
-		(arg2 #GsGciOopType) 
-		(arg3 #GsGciOopType) 
-		(arg4 #GsGciOopType) 
-		(arg5 #GsGciOopType) 
-		(arg6 #GsGciOopType) 
-		(arg7 #GsGciOopType) 
-		(arg8 #GsGciOopType) 
-		(arg9 #GsGciOopType) 
-		(arg10 #GsGciOopType) 
-		(number 'long') 
-		(argCount 'long') 
-		(fatal 'uchar' 3) 
-		(message 'char' 1025) 
-      (reason 'char' 1025)
+		GsGciOopType category;
+		GsGciOopType context; 
+		GsGciOopType exceptionObj;  
+		GsGciOopType arg1; 
+		GsGciOopType arg2;
+		GsGciOopType arg3;
+		GsGciOopType arg4;
+		GsGciOopType arg5;
+		GsGciOopType arg6;
+		GsGciOopType arg7;
+		GsGciOopType arg8;
+		GsGciOopType arg9;
+		GsGciOopType arg10;
+		long number;  
+		long argCount;  
+		uchar fatal; 
+		char message; 
+      char reason;
 		)

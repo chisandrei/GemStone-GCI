@@ -1,3 +1,4 @@
-accessing
+accessing structure variables
 category
-	^GsGciOopType fromHandle: (handle structAt: 1 length: 8)
+	"This method was automatically generated"
+	^GsGciOopType fromHandle: (handle referenceStructAt: 1 length: 8)

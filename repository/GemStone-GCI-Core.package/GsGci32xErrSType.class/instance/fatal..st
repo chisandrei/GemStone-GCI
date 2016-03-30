@@ -1,4 +1,4 @@
 accessing structure variables
-message
+fatal: anObject
 	"This method was automatically generated"
-	^handle unsignedCharAt: 114
+	handle unsignedByteAt: 113 put: anObject

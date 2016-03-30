@@ -1,3 +1,4 @@
-accessing
+accessing structure variables
 reason
-	^ (handle copyFrom: 1141 to: 1141 + 1024) asString copyUpTo: Character null
+	"This method was automatically generated"
+	^handle unsignedCharAt: 115

@@ -1,3 +1,3 @@
 printing
 printOn: aStream
-	aStream nextPutAll: 'GemStone Error (' , self number printString , '): ' , self message printString
+	aStream nextPutAll: 'GemStone Error (' , self number printString , '): ' , self messageAsString printString

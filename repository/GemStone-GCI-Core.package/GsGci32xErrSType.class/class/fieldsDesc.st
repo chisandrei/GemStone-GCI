@@ -24,5 +24,6 @@ public:
 		int number;  
 		int argCount;  
 		uchar fatal; 
-		Char301 message; 
+		Char1025 message; 
+		Char1025 reason; 
 		)

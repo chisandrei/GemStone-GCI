@@ -1,14 +1,14 @@
 {
-	"category" : "GemStone-GCI-Core-Objects",
+	"category" : "GemStone-GCI-Core-Types",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"OopTypes" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "GsGciOopType",
+	"name" : "FFIGemstone64HandleType",
 	"pools" : [
 		 ],
-	"super" : "FFIConstantHandle",
+	"super" : "FFIConstantHandleType",
 	"type" : "normal" }

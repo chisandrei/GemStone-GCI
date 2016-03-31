@@ -1,7 +1,6 @@
 {
 	"class" : {
-		"fieldsDesc" : "MarianoMartinezPeck 3/30/2016 12:39",
-		"fromInteger:" : "dkh 2/13/2016 14:55",
+		"asExternalTypeOn:" : "MarianoMartinezPeck 3/31/2016 13:09",
 		"initialize" : "dkh 3/4/2016 10:01",
 		"oopClassByteArray" : "dkh 3/3/2016 07:20",
 		"oopClassDoubleByteString" : "dkh 2/18/2016 15:42",
@@ -23,8 +22,8 @@
 		"oopTypes" : "dkh 2/19/2016 07:21" },
 	"instance" : {
 		"=" : "dkh 2/14/2016 06:51",
-		"asInteger" : "dkh 2/15/2016 11:24",
-		"asLocalByteObj:" : "MarianoMartinezPeck 3/29/2016 22:22",
+		"asInteger" : "MarianoMartinezPeck 3/31/2016 13:33",
+		"asLocalByteObj:" : "MarianoMartinezPeck 3/31/2016 12:50",
 		"asLocalFloatObj:" : "dkh 3/2/2016 14:37",
 		"asLocalFractionObj" : "dkh 3/2/2016 15:06",
 		"asLocalObjectFor:" : "dkh 2/14/2016 07:38",
@@ -34,6 +33,7 @@
 		"fetchChars:" : "MarianoMartinezPeck 3/29/2016 22:23",
 		"fetchDoubleByteChars:" : "MarianoMartinezPeck 3/29/2016 22:23",
 		"fetchQuadByteChars:" : "MarianoMartinezPeck 3/29/2016 22:23",
+		"gciResultToGsOopType:" : "MarianoMartinezPeck 3/31/2016 13:35",
 		"localObjectToGciOopType:" : "MarianoMartinezPeck 3/29/2016 21:51",
 		"oopClassByteArray" : "dkh 3/3/2016 09:26",
 		"oopClassDoubleByteString" : "dkh 2/18/2016 15:44",
@@ -47,7 +47,4 @@
 		"oopClassUnicode7" : "dkh 2/18/2016 15:43",
 		"oopClassUnicode7oopClassUnicode7" : "dkh 2/18/2016 15:43",
 		"oopMaxSmallInteger" : "dkh 2/14/2016 07:32",
-		"oopNil" : "dkh 2/14/2016 07:32",
-		"oopType" : "MarianoMartinezPeck 3/30/2016 12:40",
-		"oopType:" : "MarianoMartinezPeck 3/30/2016 12:40",
-		"printOn:" : "dkh 2/13/2016 18:12" } }
+		"oopNil" : "dkh 2/14/2016 07:32" } }

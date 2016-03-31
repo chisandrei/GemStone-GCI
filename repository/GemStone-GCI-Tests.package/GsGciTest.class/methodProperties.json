@@ -9,11 +9,12 @@
 		"testGciLogin" : "MarianoMartinezPeck 3/29/2016 18:10",
 		"testGciNBExecuteString1" : "MarianoMartinezPeck 3/29/2016 18:10",
 		"testGciNBExecuteString2" : "MarianoMartinezPeck 3/29/2016 18:10",
+		"testGciWrongLogin" : "MarianoMartinezPeck 3/31/2016 15:34",
 		"testGetGciErrSType" : "MarianoMartinezPeck 3/29/2016 18:10",
 		"testLocalByteObjects" : "MarianoMartinezPeck 3/29/2016 18:10",
 		"testLocalByteObjectsToGciOopType" : "MarianoMartinezPeck 3/29/2016 18:10",
 		"testLocalSpecialObjectsToGciOopType" : "MarianoMartinezPeck 3/29/2016 18:10",
 		"testLocalSpecials" : "MarianoMartinezPeck 3/29/2016 18:10",
 		"testSendTo1" : "MarianoMartinezPeck 3/29/2016 18:10",
-		"testSigAbortHandling" : "MarianoMartinezPeck 3/29/2016 18:10",
+		"testSigAbortHandling" : "MarianoMartinezPeck 3/31/2016 15:18",
 		"testSigAbortHandlingNew" : "MarianoMartinezPeck 3/29/2016 18:11" } }

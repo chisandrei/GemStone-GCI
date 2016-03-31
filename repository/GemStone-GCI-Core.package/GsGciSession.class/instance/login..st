@@ -12,11 +12,10 @@ login: aSessionDescription
 		ifTrue: [ gciSessionNumber := self gciLibrary apiGciGetSessionId ]
 		ifFalse: [ 
 			| errorResult | 
-			errorResult := GsGci32xErrSType new.
-			[
-				(self gciLibrary apiGciErr: errorResult) 
-					ifTrue: [ 
-						self error:  'GciLogin(): failed with error number: ', errorResult printString ]
-					ifFalse: [ self error: 'GciLogin(): failed' ]
-			] ensure: [ errorResult free ].
+			errorResult := GsGci32xErrSType externalNew autoRelease.
+			(self gciLibrary apiGciErr: errorResult) 
+				ifTrue: [ 
+					self error:  'GciLogin(): failed with error number: ', errorResult printString ]
+				ifFalse: [ self error: 'GciLogin(): failed' ]
+		
 		]

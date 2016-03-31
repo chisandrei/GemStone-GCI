@@ -46,7 +46,7 @@ GciExecuteStrFromContextDbg_(
   int flags,  ushort environmentId );
 "
 
-	^ self ffiCall: #( GsGciOopType GciExecuteStrFromContextDbg_(char* source, ulonglong sourceSize, GsGciOopType sourceClassOopType, GsGciOopType contextObjectOopType, GsGciOopType symbolListOopType, ulonglong flags, ushort environmentId) )
+	^ self ffiCall: #( GsGciOopType GciExecuteStrFromContextDbg_(String source, ulonglong sourceSize, GsGciOopType sourceClassOopType, GsGciOopType contextObjectOopType, GsGciOopType symbolListOopType, ulonglong flags, ushort environmentId) )
 	
 	
 "enum { 

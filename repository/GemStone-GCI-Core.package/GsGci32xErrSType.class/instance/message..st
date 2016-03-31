@@ -1,4 +1,4 @@
 accessing structure variables
 message: anObject
 	"This method was automatically generated"
-	handle unsignedCharAt: 114 put: anObject
+	handle replaceFrom: 114 to: 414 with: anObject startingAt: 1

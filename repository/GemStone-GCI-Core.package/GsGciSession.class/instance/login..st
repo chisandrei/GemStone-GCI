@@ -11,7 +11,10 @@ login: aSessionDescription
 	result
 		ifTrue: [ gciSessionNumber := self gciLibrary apiGciGetSessionId ]
 		ifFalse: [ 
-			"(self gciLibrary apiGciErr: GsGci32xErrSType new) inspect.  "
-			self halt: 'handle failed login'
-			
+			| errorResult | 
+			errorResult := GsGci32xErrSType new.
+			(self gciLibrary apiGciErr: errorResult) 
+				ifTrue: [ 
+					self error:  'GciLogin(): failed with error: ', errorResult message printString ]
+				ifFalse: [ self error: 'GciLogin(): failed' ]
 			 ]

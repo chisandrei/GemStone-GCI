@@ -8,7 +8,7 @@ bindToGciLibrary
 	(libName endsWith: ext)
 		ifFalse: [ libName := libName , ext ].
 	library := libraryClass libraryNamed: libName.
-	library apiGciInit.
+	library apiGciInit ifFalse: [ self error: 'GciInit(): the initialization was not successful' ].
 	gciLibraryVersion := library apiGciVersion.
 	(gciLibraryVersion beginsWith: sessionDescription gemstoneVersion)
 		ifFalse: [ 

@@ -20,19 +20,9 @@ public:
 		GsGciOopType category;
 		GsGciOopType context; 
 		GsGciOopType exceptionObj;  
-		GsGciOopType arg1; 
-		GsGciOopType arg2;
-		GsGciOopType arg3;
-		GsGciOopType arg4;
-		GsGciOopType arg5;
-		GsGciOopType arg6;
-		GsGciOopType arg7;
-		GsGciOopType arg8;
-		GsGciOopType arg9;
-		GsGciOopType arg10;
-		long number;  
-		long argCount;  
+		GsGciOopType10 args;
+		int number;  
+		int argCount;  
 		uchar fatal; 
-		char message; 
-      char reason;
+		Char301 message; 
 		)

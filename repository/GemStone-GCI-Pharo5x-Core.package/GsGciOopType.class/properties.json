@@ -1,0 +1,14 @@
+{
+	"category" : "GemStone-GCI-Pharo5x-Core-Objects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"OopTypes" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GsGciOopType",
+	"pools" : [
+		 ],
+	"super" : "FFIConstantHandle",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+converting
+localObjectToGciOopType: aGciSession
+	^ self

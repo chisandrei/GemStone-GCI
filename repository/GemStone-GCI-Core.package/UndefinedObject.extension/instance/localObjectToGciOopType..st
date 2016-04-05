@@ -1,3 +1,3 @@
 *GemStone-GCI-Core
-localObjectToGciOopType: aTugricGciSession
+localObjectToGciOopType: aGciSession
 	^ GsGciOopType oopNil 

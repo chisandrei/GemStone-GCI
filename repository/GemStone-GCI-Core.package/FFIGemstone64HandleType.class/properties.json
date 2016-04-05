@@ -1,0 +1,14 @@
+{
+	"category" : "GemStone-GCI-Core-Types",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "FFIGemstone64HandleType",
+	"pools" : [
+		 ],
+	"super" : "FFIConstantHandleType",
+	"type" : "normal" }

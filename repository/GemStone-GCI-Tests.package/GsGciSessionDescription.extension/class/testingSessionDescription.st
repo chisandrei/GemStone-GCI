@@ -10,3 +10,4 @@ testingSessionDescription
 		password: 'swordfish';
 		gemstoneVersion: '3.3.0';
 		yourself
+		

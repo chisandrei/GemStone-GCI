@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testGciTsExecuteString1" : "dkh 3/4/2016 10:01",
-		"testGciTsLogin" : "dkh 3/4/2016 09:31",
-		"xtestGciTsExecuteAndFetchResultAsUtf8EncodedString1" : "dkh 3/4/2016 09:31",
-		"xtestGciTsExecuteStringError1" : "dkh 3/4/2016 10:01" } }
+		"testGciTsExecuteString1" : "TravisCI 4/5/2016 14:15",
+		"testGciTsLogin" : "TravisCI 4/5/2016 14:15",
+		"xtestGciTsExecuteAndFetchResultAsUtf8EncodedString1" : "TravisCI 4/5/2016 14:15",
+		"xtestGciTsExecuteStringError1" : "TravisCI 4/5/2016 14:15" } }

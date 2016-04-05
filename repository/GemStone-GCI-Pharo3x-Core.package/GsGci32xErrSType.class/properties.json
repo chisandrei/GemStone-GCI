@@ -1,0 +1,14 @@
+{
+	"category" : "GemStone-GCI-Pharo3x-Core-Objects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 2/15/2016 11:05",
+	"instvars" : [
+		 ],
+	"name" : "GsGci32xErrSType",
+	"pools" : [
+		 ],
+	"super" : "ExternalStructure",
+	"type" : "normal" }

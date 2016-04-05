@@ -1,7 +1,7 @@
 tests
 testGciNBExecuteString1
 	| session resultOopType limit count |
-	session := GsGciSession login: GsGciSessionDescription example.
+	session := GsGciSession login: GsGciSessionDescription testingSessionDescription.
 	resultOopType := nil.
 	limit := 10.
 	count := 0.

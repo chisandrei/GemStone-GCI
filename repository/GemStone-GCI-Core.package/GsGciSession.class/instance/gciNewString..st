@@ -7,4 +7,4 @@ gciNewString: aByteString
 			result := lib
 				apiGciSetSessionId: gciSessionNumber;
 				apiGciNewString: aByteString.
-			^ result gciResultToGsOopType: self ]
+			^ result asInteger gciResultToGsOopType: self ]

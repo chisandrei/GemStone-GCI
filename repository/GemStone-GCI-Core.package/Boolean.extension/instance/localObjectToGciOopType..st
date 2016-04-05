@@ -1,5 +1,5 @@
 *GemStone-GCI-Core
-localObjectToGciOopType: aTugricGciSession
+localObjectToGciOopType: aGciSession
 	^ self
 		ifTrue: [ GsGciOopType oopTrue ]
 		ifFalse: [ GsGciOopType oopFalse ]

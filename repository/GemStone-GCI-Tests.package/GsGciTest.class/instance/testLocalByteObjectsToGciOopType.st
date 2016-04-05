@@ -1,7 +1,7 @@
 tests
 testLocalByteObjectsToGciOopType
 	| session |
-	session := GsGciSession login: GsGciSessionDescription example.
+	session := GsGciSession login: GsGciSessionDescription testingSessionDescription.
 	[ 
 	{'hello world'. "Unicode7"
 	#'hello world'.

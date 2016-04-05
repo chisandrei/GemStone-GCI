@@ -7,4 +7,4 @@ gciI64ToOop: anInteger
 			result := lib
 				apiGciSetSessionId: gciSessionNumber;
 				apiGciI64ToOop: anInteger.
-			^ result gciResultToGsOopType: self ]
+			^ result asInteger gciResultToGsOopType: self ]

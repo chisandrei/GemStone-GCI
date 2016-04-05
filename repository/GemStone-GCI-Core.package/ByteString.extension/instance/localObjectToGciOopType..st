@@ -1,3 +1,3 @@
 *GemStone-GCI-Core
-localObjectToGciOopType: aTugricGciSession
-	^ aTugricGciSession gciNewString: self
+localObjectToGciOopType: aGciSession
+	^ aGciSession gciNewString: self

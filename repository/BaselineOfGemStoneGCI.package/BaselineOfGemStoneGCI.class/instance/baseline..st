@@ -31,13 +31,12 @@ baseline: spec
 								repository: 'http://www.squeaksource.com/MetacelloRepository' ];
 				yourself.
 			spec
-				package: 'GemStone-GCI-Pharo3x-Core';
+				package: 'GemStone-GCI-Pharo3x-Core' with: [ spec postLoadDoIt: #initGci32xErrSType ];
 				package: 'GemStone-GCI-Core'
 					with: [ 
 							spec
 								requires: #('FFI');
-								includes: #('GemStone-GCI-Pharo3x-Core');
-								postLoadDoIt: #initGci32xErrSType ];
+								includes: #('GemStone-GCI-Pharo3x-Core') ];
 				yourself ].
 	spec
 		for: #(#'pharo5.x')

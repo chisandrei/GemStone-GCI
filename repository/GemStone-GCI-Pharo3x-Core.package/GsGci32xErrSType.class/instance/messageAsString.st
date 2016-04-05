@@ -1,0 +1,3 @@
+accessing
+messageAsString
+	^ self message

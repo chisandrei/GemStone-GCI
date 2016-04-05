@@ -1,11 +1,11 @@
 *GemStone-GCI-Tests
 testingSessionDescription
 	^ self new
-		name: 'GemStone-GCI-Testing';
+		name: 'voyage_330';
 		stoneHost: 'localhost';
-		stoneName: 'GemStone-GCI-Testing';
+		stoneName: 'voyage_330';
 		gemHost: 'localhost';
-		netLDI: 'GemStone-GCI-Testing_ldi';
+		netLDI: 'voyage_330_ldi';
 		userId: 'DataCurator';
 		password: 'swordfish';
 		gemstoneVersion: '3.3.0';

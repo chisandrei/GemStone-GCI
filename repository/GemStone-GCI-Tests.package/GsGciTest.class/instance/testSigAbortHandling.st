@@ -51,7 +51,7 @@ testSigAbortHandling
 	gciErrSType := session2 getGciErrSType.
 	self assert: gciErrSType notNil.
 	self assert: gciErrSType number = 6012.	"#rtErrSignalFinishTransaction"
-	self assert: (gciErrSType messageAsString includesSubstring: 'TransactionBacklog occurred (notification 6012), inTransaction=nil').
+	self assert: (gciErrSType message = 'TransactionBacklog occurred (notification 6012), inTransaction=nil').
 	
 	gciErrSType number = 6012
 		ifTrue: [ 

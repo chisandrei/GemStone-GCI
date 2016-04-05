@@ -1,4 +1,4 @@
-initialize-release
+*GemStone-GCI-Pharo5x-Core
 login: aSessionDescription
 	| result |
 	super login: aSessionDescription.

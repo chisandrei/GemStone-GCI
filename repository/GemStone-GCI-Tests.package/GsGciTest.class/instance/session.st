@@ -2,6 +2,7 @@ sessions
 session
 	"SCIGemStoneServerConfigSpec defaultSessionName: 'voyage_330'"
 
-	^ (Smalltalk at: #SCIGemStoneServerConfigSpec ifAbsent: [  ])
+	theSession := (Smalltalk at: #SCIGemStoneServerConfigSpec ifAbsent: [  ])
 		ifNotNil: [ :cl | (GsDevKitSession forSessionNamed: cl defaultSessionName) session ]
-		ifNil: [ GsGciSession login: GsGciSessionDescription testingSessionDescription ]
+		ifNil: [ GsGciSession login: GsGciSessionDescription testingSessionDescription ].
+	^ theSession

@@ -32,7 +32,7 @@ public:
 		(arg10 #GsGciOopType) 
 		(number 'long') 
 		(argCount 'long') 
-		(fatal 'uchar' 3) 
-		(message 'char' 1025) 
-      (reason 'char' 1025)
+		(fatal 'uchar' 3) "manually patched"
+		(message 'char' 1025) "manually patched"
+      (reason 'char' 1025) "manually patched"
 		)

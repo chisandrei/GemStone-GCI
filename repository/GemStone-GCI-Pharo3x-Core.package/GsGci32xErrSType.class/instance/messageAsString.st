@@ -1,3 +1,0 @@
-accessing
-messageAsString
-	^ self message

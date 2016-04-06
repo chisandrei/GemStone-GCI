@@ -1,3 +1,5 @@
 accessing
 reason
-	^ (handle copyFrom: 1141 to: 1141 + 1024) asString copyUpTo: Character null
+	"manually patched ... was 1141 -- new value matches Pharo5.0 value"
+
+	^ (handle copyFrom: 1139 to: 1139 + 1024) asString copyUpTo: Character null

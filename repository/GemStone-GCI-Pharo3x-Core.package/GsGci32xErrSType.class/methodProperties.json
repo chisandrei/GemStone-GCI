@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"fields" : "dkh 3/4/2016 10:01" },
+		"fields" : "dkh 4/5/2016 17:08" },
 	"instance" : {
 		"arg1" : "dkh 3/4/2016 10:01",
 		"arg10" : "dkh 3/4/2016 10:01",
@@ -19,9 +19,8 @@
 		"category" : "dkh 3/4/2016 10:01",
 		"context" : "dkh 3/4/2016 10:01",
 		"exceptionObj" : "dkh 3/4/2016 10:01",
-		"fatal" : "dkh 2/15/2016 11:44",
-		"message" : "dkh 2/15/2016 11:38",
-		"messageAsString" : "TravisCI 4/5/2016 16:07",
+		"fatal" : "dkh 4/5/2016 17:09",
+		"message" : "dkh 4/5/2016 17:10",
 		"number" : "dkh 2/15/2016 11:00",
 		"printOn:" : "dkh 2/16/2016 09:23",
-		"reason" : "dkh 2/15/2016 11:38" } }
+		"reason" : "dkh 4/5/2016 17:10" } }

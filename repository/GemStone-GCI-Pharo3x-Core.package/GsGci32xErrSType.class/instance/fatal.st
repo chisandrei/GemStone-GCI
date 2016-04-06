@@ -1,5 +1,5 @@
 accessing
 fatal
-	"not sure that this is defined correctly"
+	"manually patched ... was 105 -- new value matches Pharo5.0 value"
 
-	^ handle unsignedCharAt: 105
+	^ handle unsignedCharAt: 113

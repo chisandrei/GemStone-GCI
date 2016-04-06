@@ -2,9 +2,11 @@ SmalltalkCISpec {
   #specName : 'GemStoneGCI',
   #configuring : [
     SCIGemStoneServerConfigSpec {
+     #defaultSessionName : 'gciTest',
      #stoneConfPath : 'gemstone/stone.conf',
      #gemConfPath : 'gemstone/gem.conf',
-     #timeZone : 'UTC' 
+     #timeZone : 'UTC',
+     #platforms : [ #gemstone ] 
     }
   ],
   #loading : [

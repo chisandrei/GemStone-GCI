@@ -18,17 +18,19 @@ After [following the installation steps for **GsDevKit_home**](https://github.co
 ```
 cd $GS_HOME/shared/repos
 git clone https://github.com/GsDevKit/GemStone-GCI.git
-createStone -c -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston gci_330 3.3.0
-createClient -t pharo gciClient50 -v Pharo5.0  -s gci_330 -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
+createStone -c -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston gciTest 3.3.0
+createClient -t pharo gciClient50 -v Pharo5.0 -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
 startClient gciClient50
 ```
 
-At this point you will have Pharo5.0 image open with GemStone-GCI installed and ready to connect to the `gci_330` stone.
+At this point you will have Pharo5.0 image open with GemStone-GCI installed and ready to connect to the `gciTest` stone.
 Once the image is open you can use the following Smalltalk expression to change the name of the default session:
 
 ```smalltalk
-SCIGemStoneServerConfigSpec defaultSessionName: `<stone-name>'
+SCIGemStoneServerConfigSpec defaultSessionName: `<session-description-name>'
 ```
+
+and the tests will start using the session description (i.e., stone) with that name.
 
 # Alternate Installation Instructions
 
@@ -52,7 +54,7 @@ Metacello new
 First step to run the unit tests is to create a stone for running them. For that, we recommend using [GsDevKit_home](https://github.com/GsDevKit/GsDevKit_home)
 
 ```bash
-createStone GemStone-GCI-Testing 3.3.0
+createStone GemStone-GCI-Test 3.3.0
 ```
 
 Otherwise, you can use an already existing stone and change the method `#testingSessionDescription`.

@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"session" : "dkh 4/6/2016 05:05",
+		"session" : "TravisCI 4/6/2016 10:48",
+		"sessionDescription" : "TravisCI 4/6/2016 10:59",
 		"testExceptions" : "dkh 4/6/2016 04:59",
 		"testGciExecuteString1" : "dkh 4/6/2016 04:59",
 		"testGciExecuteString2" : "dkh 4/6/2016 04:59",
@@ -10,7 +11,7 @@
 		"testGciLogin" : "dkh 4/6/2016 04:59",
 		"testGciNBExecuteString1" : "dkh 4/6/2016 05:00",
 		"testGciNBExecuteString2" : "dkh 4/6/2016 05:00",
-		"testGciWrongLogin" : "dkh 4/6/2016 05:00",
+		"testGciWrongLogin" : "TravisCI 4/6/2016 10:57",
 		"testGetGciErrSType" : "dkh 4/6/2016 05:00",
 		"testLocalByteObjects" : "dkh 4/6/2016 05:00",
 		"testLocalByteObjectsToGciOopType" : "dkh 4/6/2016 05:01",

@@ -19,8 +19,8 @@ After [following the installation steps for **GsDevKit_home**](https://github.co
 cd $GS_HOME/shared/repos
 git clone https://github.com/GsDevKit/GemStone-GCI.git
 createStone -c -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston gci_330 3.3.0
-createClient -t pharo gciClient50 -v Pharo5.0 -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
-startClient gciClient50 -s gci_330
+createClient -t pharo gciClient50 -v Pharo5.0  -s gci_330 -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
+startClient gciClient50
 ```
 
 At this point you will have Pharo5.0 image open with GemStone-GCI installed and ready to connect to the `gci_330` stone.

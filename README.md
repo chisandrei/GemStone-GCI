@@ -30,7 +30,7 @@ Once the image is open you can use the following Smalltalk expression to change 
 SCIGemStoneServerConfigSpec defaultSessionName: `<stone-name>'
 ```
 
-# Alternate Installation Insructions
+# Alternate Installation Instructions
 
 ## Prerequisites
 

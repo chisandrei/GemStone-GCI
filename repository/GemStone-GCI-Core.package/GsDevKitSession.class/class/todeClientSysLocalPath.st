@@ -1,3 +1,3 @@
 GsDevKit
 todeClientSysLocalPath
-	^self todeClientSysPath , '/local/' 
+	^self todeClientSysPath / 'local' 

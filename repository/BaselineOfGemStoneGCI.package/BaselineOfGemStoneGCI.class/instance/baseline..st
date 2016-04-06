@@ -10,12 +10,12 @@ baseline: spec
 						repository: 'github://GsDevKit/ston:v0.9.4/repository' ];
 				yourself.
 			spec
-				package: 'GemStone-GCI-Tode-Compat'
-					with: [ spec requires: #('GemStone-GCI-SessionDescription') ];
 				package: 'GemStone-GCI-Core'
 					with: [ spec
-						postLoadDoIt: self initGsDevKitSupport;
+						postLoadDoIt: #initGsDevKitSupport;
 						requires: #('Ston') ];
+				package: 'GemStone-GCI-Tode-Compat'
+					with: [ spec requires: #('GemStone-GCI-Core') ];
 				package: 'GemStone-GCI-Tests' with: [ spec requires: 'GemStone-GCI-Core' ];
 				yourself.
 			spec

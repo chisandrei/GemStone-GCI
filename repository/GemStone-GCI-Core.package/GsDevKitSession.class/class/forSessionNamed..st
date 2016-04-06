@@ -1,8 +1,7 @@
 instance creation
 forSessionNamed: aSessionName
 	| sessionDescription |
-	sessionDescription := GsGciSessionDescription
-		importFrom: self gsDevKitSessionDescriptionPath / aSessionName.
+	sessionDescription := self sessionDescriptionForSessionNamed: aSessionName.
 	^ self new
 		sessionDescription: sessionDescription;
 		yourself

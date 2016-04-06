@@ -1,0 +1,3 @@
+accessing
+sessionDescriptionForSessionNamed: aSessionName
+	^ GsGciSessionDescription importFrom: self gsDevKitSessionDescriptionPath / aSessionName

@@ -1,3 +1,3 @@
 GsDevKit
 todeClientSysPath
-	^self todeClientRoot , '/sys/' 
+	^self todeClientRoot asFileReference / 'sys' 

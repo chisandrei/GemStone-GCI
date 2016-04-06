@@ -2,6 +2,11 @@ baseline
 baseline: spec
 	<baseline>
 	spec
+		for: #common
+		do: [ spec
+				group: 'GsDevKit' with: #();
+				yourself ].
+	spec
 		for: #(#pharo)
 		do: [ spec
 				baseline: 'Ston'
@@ -14,8 +19,7 @@ baseline: spec
 					with: [ spec
 						postLoadDoIt: #initGsDevKitSupport;
 						requires: #('Ston') ];
-				package: 'GemStone-GCI-Tode-Compat'
-					with: [ spec requires: #('GemStone-GCI-Core') ];
+				package: 'GemStone-GCI-Tode-Compat' with: [ spec requires: #('GemStone-GCI-Core') ];
 				package: 'GemStone-GCI-Tests' with: [ spec requires: 'GemStone-GCI-Core' ];
 				yourself.
 			spec

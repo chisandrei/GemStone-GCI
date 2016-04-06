@@ -1,7 +1,7 @@
 tests
 testLocalSpecials
 	| session |
-	session := GsGciSession login: GsGciSessionDescription testingSessionDescription.
+	session := self session.
 	[ 
 	{('3/4' -> (3 / 4)).
 	('-3/4' -> (-3 / 4)).

@@ -1,7 +1,7 @@
 tests
 testLocalSpecialObjectsToGciOopType
 	| session |
-	session := GsGciSession login: GsGciSessionDescription testingSessionDescription.
+	session := self session.
 	[ 
 	{
 	1.0.

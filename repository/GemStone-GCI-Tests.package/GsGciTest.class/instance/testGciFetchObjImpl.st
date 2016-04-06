@@ -1,7 +1,7 @@
 tests
 testGciFetchObjImpl
 	| session |
-	session := GsGciSession login: GsGciSessionDescription testingSessionDescription.
+	session := self session.
 	[ 
 	{('Object new' -> 0).
 	('''str''' -> 1).

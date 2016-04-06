@@ -1,7 +1,7 @@
 tests
 testExceptions
 	| session |
-	session := GsGciSession login: GsGciSessionDescription testingSessionDescription.
+	session := self session.
 	[ 
 	| result |
 	result := session executeString: '1'.

@@ -1,7 +1,7 @@
 tests
 testLocalByteObjects
 	| session |
-	session := GsGciSession login: GsGciSessionDescription testingSessionDescription.
+	session := self session.
 	[ 
 	{('''hello world''' -> 'hello world').
 	('''élève en Français''' -> 'élève en Français').

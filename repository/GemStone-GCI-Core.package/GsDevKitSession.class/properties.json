@@ -1,0 +1,17 @@
+{
+	"category" : "GemStone-GCI-Core-Session",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"TodeClientRoot",
+		"TodeRoot" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sessionDescription",
+		"sessionName",
+		"session" ],
+	"name" : "GsDevKitSession",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

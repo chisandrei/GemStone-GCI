@@ -10,13 +10,19 @@ baseline: spec
 						repository: 'github://GsDevKit/ston:v0.9.4/repository' ];
 				yourself.
 			spec
-				package: 'GemStone-GCI-Core' with: [ spec requires: #('Ston') ];
+				package: 'GemStone-GCI-Tode-Compat'
+					with: [ spec requires: #('GemStone-GCI-SessionDescription') ];
+				package: 'GemStone-GCI-Core'
+					with: [ spec
+						postLoadDoIt: self initGsDevKitSupport;
+						requires: #('Ston') ];
 				package: 'GemStone-GCI-Tests' with: [ spec requires: 'GemStone-GCI-Core' ];
 				yourself.
 			spec
 				group: 'default' with: #('Core' 'Tests');
 				group: 'Core' with: #('GemStone-GCI-Core');
 				group: 'Tests' with: #('GemStone-GCI-Tests');
+				group: 'GsDevKit' with: #('GemStone-GCI-Tode-Compat');
 				yourself ].
 	spec
 		for: #(#'pharo3.x' #'pharo4.x')

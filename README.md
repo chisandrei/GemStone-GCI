@@ -32,6 +32,8 @@ SCIGemStoneServerConfigSpec defaultSessionName: `<session-description-name>'
 
 and the tests will start using the session description (i.e., stone) with that name.
 
+It is important to note that by using `createClient`, you are ensuring that the `GCI` libraries needed for communication with the stone are installed in the proper locations and updated when a new GemSTone version is downloaded.
+
 # Alternate Installation Instructions
 
 ## Prerequisites

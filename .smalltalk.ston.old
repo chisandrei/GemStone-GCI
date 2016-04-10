@@ -1,0 +1,20 @@
+SmalltalkCISpec {
+  #specName : 'GemStoneGCI',
+  #configuring : [
+    SCIGemStoneServerConfigSpec {
+     #defaultSessionName : 'gciTest',
+     #stoneConfPath : 'gemstone/stone.conf',
+     #gemConfPath : 'gemstone/gem.conf',
+     #timeZone : 'UTC',
+     #platforms : [ #gemstone ] 
+    }
+  ],
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'GemStoneGCI',
+      #load : [ 'GsDevKit', 'Tests' ],
+      #directory : 'repository',
+      #platforms : [ #gemstone, #pharo ]
+    }
+  ]
+}

@@ -20,3 +20,4 @@ matrix:
 cache:
   directories:
     - $SMALLTALK_CI_CACHE
+

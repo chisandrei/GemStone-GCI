@@ -8,58 +8,40 @@
 C function declarations for each release can be found in `$GEMSTONE/include/gci.hf`.
 
 # Installation
-
-**Under Construction:** *The following instructions depend upon yet to be released capabilities. Use the [Alternate Installation Instructions](#alternate-installation-instructions) for now.*
-
 A GemStone/S 64 stone is needed for using the GemStone GCI project. 
-For that, we recommend installing and using [GsDevKit_home](https://github.com/GsDevKit/GsDevKit_home).
-After [following the installation steps for **GsDevKit_home**](https://github.com/GsDevKit/GsDevKit_home#open-source-development-kit-for-gemstones-64-bit-), do the following in a bash shell:
+For that, we recommend installing and using [GsDevKit_home](https://github.com/GsDevKit/GsDevKit_home) using the following steps from the [GsDevKit_home installation instructions]( https://github.com/GsDevKit/GsDevKit_home#installation):
 
 ```
+# Install GsDevKit_home
+git clone https://github.com/GsDevKit/GsDevKit_home.git
+cd GsDevKit_home
+. bin/defHOME_PATH.env
+installServerClient
+
+# Create tODE client
+createClient tode
+```
+
+## Create a GemStone-GCI stone and Pharo5.0 client
+For working with GemStone-GCI, you need a local clone of the GemStone-GCI project, a stone with the GemStone-GCI server code installed,  and a Pharo client with the GemStone-GCI client code installed:
+
+```
+# Install GemStone-GCI project
 cd $GS_HOME/shared/repos
 git clone https://github.com/GsDevKit/GemStone-GCI.git
-createStone -c -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston gciTest 3.3.0
-createClient -t pharo gciClient50 -v Pharo5.0 -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
-startClient gciClient50
+
+#Create GemStone-GCI stone
+createStone -u http://gsdevkit.github.io/GsDevKit_home/GemStoneGCI.ston -i GemStoneGCI -l GemStoneGCI -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston GemStone-GCI 3.3.0
+
+# Create GemStone-GCI Pharo5.0 client
+createClient -t pharo GemStone-GCI -v Pharo5.0 -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
+
+# interactive client session -- run tests using TestRunner ... -s option specifies the stone to use
+startClient GemStone-GCI -s GemStone-GCI
+
+# run tests as a headless batch job
+startClient GemStone-GCI -s GemStone-GCI -t gciTest -r -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
+
+# run headless tests and update GemStone-GCI code before running tests
+startClient GemStone-GCI -f -s GemStone-GCI -t gciTest -r -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
 ```
-
-At this point you will have Pharo5.0 image open with GemStone-GCI installed and ready to connect to the `gciTest` stone.
-Once the image is open you can use the following Smalltalk expression to change the name of the default session:
-
-```smalltalk
-SCIGemStoneServerConfigSpec defaultSessionName: `<session-description-name>'
-```
-
-and the tests will start using the session description (i.e., stone) with that name.
-
-It is important to note that by using `createClient`, you are ensuring that the `GCI` libraries needed for communication with the stone are installed in the proper locations and updated when a new GemSTone version is downloaded.
-
-# Alternate Installation Instructions
-
-## Prerequisites
-
-For the moment, you must grab a Pharo 3.0 image and vm from [here](files.pharo.org). Then, copy the `libgci*` and `libssl*` files from the Pharo VM of a tODE client image into the just downloaded Pharo 3.0 VM.   
-
-## Installation
-
-In the Pharo 3.0 image execute:
-
-```Smalltalk
-Metacello new
-    baseline: 'GemStoneGCI';
-    repository: 'github://marianopeck/GemStone-GCI:master/repository';
-    load.
-```
-
-## Running Tests
-
-First step to run the unit tests is to create a stone for running them. For that, we recommend using [GsDevKit_home](https://github.com/GsDevKit/GsDevKit_home)
-
-```bash
-createStone GemStone-GCI-Test 3.3.0
-```
-
-Otherwise, you can use an already existing stone and change the method `#testingSessionDescription`.
-
-Second step is to load GemStoneGCI in GemStone. For that, open tODE against the created stone and execute the same load code as for Pharo.
-

@@ -1,4 +1,10 @@
 SmalltalkCISpec {
+  #configuring : [
+    SCIGemStoneServerConfigSpec {
+     #defaultSessionName : 'gciTest',
+     #platforms : [ #gemstone ] 
+    }
+  ],
   #loading : [
     SCIMetacelloLoadSpec {
       #baseline : 'GemStoneGCI',

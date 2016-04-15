@@ -30,7 +30,8 @@ testSigAbortHandlingNew
 								withArgs: {session2SessionId}).
 					retryCount := retryCount + 1.
 					retryCount > retryLimit
-						ifTrue: [ self fail: 'Retry limit exceeded' ] ] ].
+						ifTrue: [ self fail: 'Retry limit exceeded' ].
+					(Delay forSeconds: 1) wait ] ].
 	gciErrSType := session2 getGciErrSType.
 	self assert: gciErrSType notNil.
 	self assert: gciErrSType number = 6012.	"#rtErrSignalFinishTransaction"

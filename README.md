@@ -31,17 +31,17 @@ cd $GS_HOME/shared/repos
 git clone https://github.com/GsDevKit/GemStone-GCI.git
 
 #Create GemStone-GCI stone
-createStone -u http://gsdevkit.github.io/GsDevKit_home/GemStoneGCI.ston -i GemStoneGCI -l GemStoneGCI -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston GemStone-GCI 3.3.0
+createStone -u http://gsdevkit.github.io/GsDevKit_home/GemStoneGCI.ston -i GemStoneGCI -l GemStoneGCI -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston gci_330 3.3.0
 
 # Create GemStone-GCI Pharo5.0 client
-createClient -t pharo GemStone-GCI -v Pharo5.0 -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
+createClient -t pharo gci_50 -v Pharo5.0 -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
 
 # interactive client session -- run tests using TestRunner ... -s option specifies the stone to use
-startClient GemStone-GCI -s GemStone-GCI
+startClient gci_50 -s gci_330
 
 # run tests as a headless batch job
-startClient GemStone-GCI -s GemStone-GCI -t gciTest -r -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
+startClient gci_50 -s gci_330 -t gciTest -r -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
 
 # run headless tests and update GemStone-GCI code before running tests
-startClient GemStone-GCI -f -s GemStone-GCI -t gciTest -r -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
+startClient gci_50 -f -s gci_330 -t gciTest -r -z $GS_HOME/shared/repos/GemStone-GCI/.smalltalk.ston
 ```

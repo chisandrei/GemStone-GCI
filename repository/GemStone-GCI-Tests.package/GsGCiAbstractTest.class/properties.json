@@ -1,14 +1,14 @@
 {
-	"category" : "GemStone-GCI-Server-Tests",
+	"category" : "GemStone-GCI-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"testClientForwarder" ],
-	"name" : "GsGciTestServerObj",
+		"theSession" ],
+	"name" : "GsGCiAbstractTest",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TestCase",
 	"type" : "normal" }

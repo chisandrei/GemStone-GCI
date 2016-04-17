@@ -2,9 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"session" : "TravisCI 4/6/2016 11:10",
-		"sessionDescription" : "TravisCI 4/6/2016 10:59",
-		"tearDown" : "TravisCI 4/6/2016 11:12",
 		"testExceptions" : "dkh 4/6/2016 04:59",
 		"testGciExecuteString1" : "dkh 4/6/2016 04:59",
 		"testGciExecuteString2" : "dkh 4/6/2016 04:59",

@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "GsGciTest",
+		"clientForwarder",
+		"serverObj" ],
+	"name" : "GsGciClientForwarderTest",
 	"pools" : [
 		 ],
 	"super" : "GsGCiAbstractTest",

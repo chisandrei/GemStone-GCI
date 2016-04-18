@@ -1,5 +1,5 @@
 tests
-testClientForwarderSend2
+testClientForwarderSend1_2
 	"don't register any client forwarder"
 
 	| sendResult sentinel |

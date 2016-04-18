@@ -1,5 +1,5 @@
 tests
-testClientForwarderSend3
+testClientForwarderSend1_3
 	| sendResult cf sentinel |
 	cf := self clientForwarder.	"trigger client forwarder object creation"
 	self session registerClientObjectForwarderOopType: cf for: self.

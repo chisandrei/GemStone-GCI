@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"testClientForwarder" ],
+		"clientForwarder" ],
 	"name" : "GsGciTestServerObj",
 	"pools" : [
 		 ],

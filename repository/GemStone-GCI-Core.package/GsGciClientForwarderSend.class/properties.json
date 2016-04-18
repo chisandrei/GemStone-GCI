@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "GsGciTransactionBacklog",
+	"name" : "GsGciClientForwarderSend",
 	"pools" : [
 		 ],
 	"super" : "GsGciNotification",

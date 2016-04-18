@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "GsGciTransactionBacklog",
+		"gciSession",
+		"gci32xErrSType" ],
+	"name" : "GsGciNotification",
 	"pools" : [
 		 ],
-	"super" : "GsGciNotification",
+	"super" : "Notification",
 	"type" : "normal" }

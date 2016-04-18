@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"gciSessionNumber" ],
+		"gciSessionNumber",
+		"clientObjectForwarders" ],
 	"name" : "GsGciSession",
 	"pools" : [
 		 ],

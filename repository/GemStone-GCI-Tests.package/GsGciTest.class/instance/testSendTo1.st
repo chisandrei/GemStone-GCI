@@ -1,7 +1,5 @@
 tests
 testSendTo1
-	| session result |
-	session := self session.
-	[ result := session send: #size to: 'abc' ]
-		ensure: [ session logout ].
+	| result |
+	result := self session send: #size to: 'abc'.
 	self assert: result = 3

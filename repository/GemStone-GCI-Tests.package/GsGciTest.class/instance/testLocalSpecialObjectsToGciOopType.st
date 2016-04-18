@@ -1,8 +1,5 @@
 tests
 testLocalSpecialObjectsToGciOopType
-	| session |
-	session := self session.
-	[ 
 	{
 	1.0.
 	-1.0}.	"specials that remain to be handled"
@@ -14,6 +11,5 @@ testLocalSpecialObjectsToGciOopType
 	false}
 		do: [ :localSpecial | 
 			| gsOopType |
-			gsOopType := localSpecial localObjectToGciOopType: session.
-			self assert: gsOopType asLocalSpecialObj = localSpecial ] ]
-		ensure: [ session logout ]
+			gsOopType := localSpecial localObjectToGciOopType: self session.
+			self assert: gsOopType asLocalSpecialObj = localSpecial ] 

@@ -1,8 +1,8 @@
 tests
 testSigAbortHandlingNew
 	| session1 session2 gciTestServerClassOopType oldStnSigAbortCrBacklog retryLimit retryCount results |
-	session1 := self session.
-	session2 := self session.
+	session1 := self newSession.
+	session2 := self newSession.
 	gciTestServerClassOopType := session1 executeString: 'GsGciTestServerObj'.
 	[ 
 	| session2SessionId session1SessionId gciErrSType session2SigAbort |

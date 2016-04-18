@@ -1,30 +1,23 @@
 tests
 testGciNBExecuteString1
-	| session resultOopType limit count |
-	session := self session.
+	| resultOopType limit count |
 	resultOopType := nil.
 	limit := 10.
 	count := 0.
-	[ 
-	session gciExecuteStringNB: 'String'.
-	self assert: session gciCallInProgress.
-	[ 
-	session
-		gciNbEnd_OnNotReady: [ :progress | 
-			"continue pollihg"
-			false ]
+	self session gciExecuteStringNB: 'String'.
+	self assert: self session gciCallInProgress.
+	[ self session
+		gciNbEnd_OnNotReady: [ :progress | false ]
 		onReady: [ :gsOopType | 
-			"got our result"
 			resultOopType := gsOopType.
 			true ]
-		onError: [ :gci32xErrSType | 
-			"not supposed to happen"
-			self fail: 'Unexpected error: ' , gci32xErrSType printString ] ]
-		whileFalse: [ 
-			count > limit
-				ifTrue: [ 
-					self fail: 'Timed out'.
+		onError:
+			[ :gci32xErrSType | self fail: 'Unexpected error: ' , gci32xErrSType printString ]
+	"continue pollihg"
+	"got our result"
+	"not supposed to happen" ]
+		whileFalse: [ count > limit
+				ifTrue: [ self fail: 'Timed out'.
 					count := count + 1 ].
-			(Delay forMilliseconds: 250) wait ] ]
-		ensure: [ session logout ].
+			(Delay forMilliseconds: 250) wait ].
 	self assert: resultOopType = GsGciOopType oopClassString

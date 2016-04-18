@@ -1,8 +1,8 @@
 tests
 testSigAbortHandling
 	| session1 session2 oldStnSigAbortCrBacklog count limit session2SessionId session1SessionId retryLimit retryCount results |
-	session1 := self session.
-	session2 := self session.
+	session1 := self newSession.
+	session2 := self newSession.
 	session1SessionId := session1 executeString: 'System session'.
 	session2SessionId := session2 executeString: 'System session'.
 	[ 

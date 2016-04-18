@@ -1,8 +1,8 @@
 tests
 testGciNBExecuteString2
 	| session1 session2 resultOopType1 resultOopType2 limit count done1 done2 |
-	session1 := self session.
-	session2 := self session.
+	session1 := self newSession.
+	session2 := self newSession.
 	resultOopType1 := resultOopType2 := nil.
 	limit := 100.
 	count := 0.

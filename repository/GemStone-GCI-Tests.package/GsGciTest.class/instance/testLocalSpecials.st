@@ -1,8 +1,5 @@
 tests
 testLocalSpecials
-	| session |
-	session := self session.
-	[ 
 	{('3/4' -> (3 / 4)).
 	('-3/4' -> (-3 / 4)).
 	('1' -> 1).
@@ -14,6 +11,5 @@ testLocalSpecials
 	('-1.0' -> -1.0)}
 		do: [ :assoc | 
 			| local |
-			local := session executeString: assoc key.
-			self assert: local = assoc value ] ]
-		ensure: [ session logout ]
+			local := self session executeString: assoc key.
+			self assert: local = assoc value ]

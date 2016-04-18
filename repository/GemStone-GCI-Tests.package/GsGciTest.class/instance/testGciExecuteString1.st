@@ -1,7 +1,5 @@
 tests
 testGciExecuteString1
-	| session resultOopType |
-	session := self session.
-	[ resultOopType := session gciExecuteString: 'String' ]
-		ensure: [ session logout ].
+	| resultOopType |
+	resultOopType := self session gciExecuteString: 'String'.
 	self assert: resultOopType = GsGciOopType oopClassString

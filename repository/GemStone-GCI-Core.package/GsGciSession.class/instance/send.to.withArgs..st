@@ -9,4 +9,4 @@ send: selector to: receiver withArgs: args
 		args: arrayOfGsOopTypes
 		flags: 0
 		environmentId: 0.
-	^ result asLocalObjectFor: self
+	^ result asLocalObjectFor: self ifNotConverted: [:resultGciOopType | resultGciOopType]

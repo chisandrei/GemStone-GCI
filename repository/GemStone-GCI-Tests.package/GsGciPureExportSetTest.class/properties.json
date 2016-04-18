@@ -1,0 +1,14 @@
+{
+	"category" : "GemStone-GCI-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GsGciPureExportSetTest",
+	"pools" : [
+		 ],
+	"super" : "GsGCiAbstractTest",
+	"type" : "normal" }

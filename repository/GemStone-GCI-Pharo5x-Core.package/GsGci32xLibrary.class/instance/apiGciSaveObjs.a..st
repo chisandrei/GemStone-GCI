@@ -1,5 +1,5 @@
 API - export set
-apiGciSaveObjs
+apiGciSaveObjs: theOops a: numOops
 "/* ==========================================================================
  *  GciSaveObjs                 (behavior has changed in Gemstone64)
  *
@@ -32,5 +32,5 @@ apiGciSaveObjs
   GCI_ALIGN_STACK EXTERN_GCI_DEC(void)
 GciSaveObjs(const OopType theOops[], int numOops);
 "
-	^ self ffiCall: #( void GciSaveObjs() )
+	^ self ffiCall: #( void GciSaveObjs( ulong theOops, long numOops) )
 	

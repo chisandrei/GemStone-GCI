@@ -7,7 +7,8 @@
 		"sessionsReferencingOldestCr:" : "dkh 03/04/2016 10:09",
 		"sessionsReferencingOldestCrInTransactionReport:" : "dkh 03/04/2016 10:09",
 		"setStnSignalAbortCrBacklog:" : "dkh 03/04/2016 10:09",
-		"setStnSignalAbortCrBacklogAndCleanup:" : "dkh 03/04/2016 10:09" },
+		"setStnSignalAbortCrBacklogAndCleanup:" : "dkh 03/04/2016 10:09",
+		"testIfInPureExportSet:" : "dkh 04/17/2016 17:14" },
 	"instance" : {
 		"clientForwarder" : "dkh 04/17/2016 08:37",
 		"clientForwarder:" : "dkh 04/17/2016 08:37",

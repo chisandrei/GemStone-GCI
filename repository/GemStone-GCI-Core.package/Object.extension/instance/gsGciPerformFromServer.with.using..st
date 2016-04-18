@@ -1,13 +1,16 @@
 *GemStone-GCI-Core
-gsGciPerformFromServer: aSelector with: args using: aGsGciSession
+gsGciPerformFromServer: aSelector with: messageArgsOopType using: aGsGciSession
 	^ aSelector numArgs == 0
 		ifTrue: [ self perform: aSelector ]
 		ifFalse: [ | messageArgs |
-			messageArgs := args.
+			messageArgs := messageArgsOopType.
 			messageArgs isArray
-				ifFalse: [ | argCount argsOop |
-					argsOop := args.
-					argCount := aGsGciSession send: #size to: argsOop withArgs: #().
+				ifFalse: [ | argCount argsOopType |
+					argsOopType := argsOopType.
+					argCount := aGsGciSession send: #size to: argsOopType withArgs: #().
 					messageArgs := Array new: argCount.
-					1 to: argCount do: [ :i | messageArgs at: i put: (aGsGciSession send: #at: to: argsOop withArgs: {i}) ] ].
+					1 to: argCount do: [ :i | 
+						messageArgs
+							at: i
+							put: (aGsGciSession send: #at: to: argsOopType withArgs: {i}) ] ].
 			self perform: aSelector withArguments: messageArgs ]

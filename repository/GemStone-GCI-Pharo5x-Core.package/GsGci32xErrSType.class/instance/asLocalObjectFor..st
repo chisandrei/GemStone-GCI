@@ -9,11 +9,11 @@ asLocalObjectFor: aGciSession
 	exception := exceptionClass gciSession: aGciSession gci32xErrSType: self.
 	actionResult := exception signal.
 	actionResult isArray
-		ifTrue: [ | action actionValue |
+		ifTrue: [ | action actionValueOopType |
 			action := actionResult at: 1.
-			actionValue := actionResult at: 2.
+			actionValueOopType := (actionResult at: 2) localObjectToGciOopType: aGciSession.
 			action == #resume
-				ifTrue: [ ^ aGciSession continueContext: self context with: actionValue ].
+				ifTrue: [ ^ aGciSession continueContext: self context with: actionValueOopType ].
 			self
 				error:
 					'Unknown action ' , action printString , ' for exception '

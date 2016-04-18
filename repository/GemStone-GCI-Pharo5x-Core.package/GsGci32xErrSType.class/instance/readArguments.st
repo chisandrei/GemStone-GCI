@@ -9,6 +9,6 @@ readArguments
 	1 to: argCount do: [ :index | 
 		arguments
 			at: index
-			put: (GsGciOopType fromInteger: (handle unsignedLongAt: ofs)).
-			ofs := ofs + 8 ].
+			put: (GsGciOopType fromInteger: (self getHandle unsignedLongLongAt: ofs)).
+		ofs := ofs + 8 ].
 	^ arguments

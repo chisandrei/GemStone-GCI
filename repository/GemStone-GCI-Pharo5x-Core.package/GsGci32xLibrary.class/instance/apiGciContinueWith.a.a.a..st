@@ -40,4 +40,4 @@ GciContinueWith(
   GciErrSType *error
 );"
 	
-	^ self ffiCall: #( GsGciOopType GciContinueWith( GsGciOopType process, GsGciOopType replaceTopOfStack, int flags, GsGci32xErrSType *error ) )
+	^ self ffiCall: #( GsGciOopType GciContinueWith( GsGciOopType process, GsGciOopType replaceTopOfStack, ulonglong flags, void *error ) )

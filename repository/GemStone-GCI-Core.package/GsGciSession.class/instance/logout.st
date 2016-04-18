@@ -12,4 +12,5 @@ logout
 		critical: [ :lib | 
 			lib
 				apiGciSetSessionId: gciSessionNumber;
-				apiGciLogout ]
+				apiGciLogout ].
+	self invalidateSession

@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "GsGciError",
+		"gciSession",
+		"gci32xErrSType" ],
+	"name" : "GsGciAbstractError",
 	"pools" : [
 		 ],
-	"super" : "GsGciAbstractError",
+	"super" : "Error",
 	"type" : "normal" }

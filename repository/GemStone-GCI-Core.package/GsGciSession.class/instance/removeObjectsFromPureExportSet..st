@@ -1,5 +1,5 @@
 api
-saveObjectsToExportSet: arrayOfObjs
+removeObjectsFromPureExportSet: arrayOfObjs
 	| theOops |
 	theOops := arrayOfObjs collect: [ :each | each localObjectToGciOopType: self ].
-	self gciSaveObjs: theOops
+	self gciReleaseOops: theOops

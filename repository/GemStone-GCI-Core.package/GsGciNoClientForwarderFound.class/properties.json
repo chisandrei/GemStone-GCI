@@ -1,0 +1,14 @@
+{
+	"category" : "GemStone-GCI-Core-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GsGciNoClientForwarderFound",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

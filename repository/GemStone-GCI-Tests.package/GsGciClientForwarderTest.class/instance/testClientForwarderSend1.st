@@ -1,8 +1,9 @@
 tests
 testClientForwarderSend1
-	| pureExportSetReport |
-	self clientForwarder.	"trigger object creation"
-	pureExportSetReport := self session
-		executeString:
-			'STON toString: ((System hiddenSetAsArray: 39) collect: [:each | {Reflection oopOf:  each. (Reflection classOf:  each) printString} ])'.
-	self assert: (self session send: #send1 to: self clientForwarder)
+	| sendResult cf |
+	cf := self clientForwarder.	"trigger client forwarder object creation"
+	self session registerClientObjectForwarderOopType: cf for: self.
+	sendResult := [ self session send: #clientForwarderSend1 to: self serverObj ]
+		on: GsGciClientForwarderSend
+		do: [ :ex | self halt ].
+	self assert: sendResult

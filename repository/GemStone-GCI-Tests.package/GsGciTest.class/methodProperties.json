@@ -9,7 +9,7 @@
 		"testGciLogin" : "dkh 4/17/2016 20:12",
 		"testGciNBExecuteString1" : "dkh 4/17/2016 20:13",
 		"testGciNBExecuteString2" : "dkh 4/17/2016 20:14",
-		"testGciWrongLogin" : "TravisCI 4/6/2016 10:57",
+		"testGciWrongLogin" : "dkh 4/18/2016 12:16",
 		"testGetGciErrSType" : "dkh 4/17/2016 20:14",
 		"testLocalByteObjects" : "dkh 4/17/2016 20:14",
 		"testLocalByteObjectsToGciOopType" : "dkh 4/17/2016 20:15",

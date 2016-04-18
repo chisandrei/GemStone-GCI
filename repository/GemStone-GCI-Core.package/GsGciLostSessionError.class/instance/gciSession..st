@@ -1,4 +1,5 @@
 accessing
 gciSession: anObject
 	super gciSession: anObject.
-	gciSession 
+	gciSession invalidateSession.
+	self halt.

@@ -5,4 +5,7 @@ testGciWrongLogin
 	| wrongSessionDesc |
 	wrongSessionDesc := self sessionDescription.
 	wrongSessionDesc password: 'wrongPassword'.
-	self executeShould: [ GsGciSession login: wrongSessionDesc ] inScopeOf: Error withDescriptionContaining: 'the userId/password combination is invalid or expired'.
+	self
+		executeShould: [ GsGciSession login: wrongSessionDesc ]
+		inScopeOf: Error
+		withDescriptionContaining: 'the userId/password combination is invalid or expired'

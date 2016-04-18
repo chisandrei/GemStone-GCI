@@ -1,5 +1,5 @@
 api
-isObjectInExportSet: aGsGciOopType
+isObjectInPureExportSet: aGsGciOopType
 	^ self
 		executeString:
 			'System testIf: (Object _objectForOop: ' , aGsGciOopType asInteger printString

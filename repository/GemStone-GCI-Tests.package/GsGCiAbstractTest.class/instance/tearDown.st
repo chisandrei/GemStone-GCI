@@ -1,4 +1,8 @@
 running
 tearDown
 	super tearDown.
-	theSession ifNotNil: [ theSession logout ]
+	theSession
+		ifNotNil: [ | sess |
+			sess := theSession.
+			theSession := nil.
+			sess logout ]

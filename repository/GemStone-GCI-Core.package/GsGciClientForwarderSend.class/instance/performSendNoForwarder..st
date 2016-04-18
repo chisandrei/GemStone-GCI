@@ -1,7 +1,7 @@
 sending
 performSendNoForwarder: noForwarderBlock
 	| forwarder selector args messageArgs |
-	args := self gci32xErrSType args.
+	args := self gci32xErrSType readArguments.
 	forwarder := gciSession
 		clientObjectForwarderForOop: (args at: 1)
 		ifAbsent: noForwarderBlock.

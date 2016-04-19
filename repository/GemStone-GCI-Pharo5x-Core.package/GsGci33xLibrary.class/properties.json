@@ -1,0 +1,14 @@
+{
+	"category" : "GemStone-GCI-Pharo5x-Core-Libraries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GsGci33xLibrary",
+	"pools" : [
+		 ],
+	"super" : "GsGci32xLibrary",
+	"type" : "normal" }

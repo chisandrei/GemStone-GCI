@@ -1,14 +1,6 @@
 tests
 testLocalSpecials
-	{('3/4' -> (3 / 4)).
-	('-3/4' -> (-3 / 4)).
-	('1' -> 1).
-	('-1' -> -1).
-	('$a' -> $a).
-	('nil' -> nil).
-	('false' -> false).
-	('1.0' -> 1.0).
-	('-1.0' -> -1.0)}
+	self session localSpecialsListForGsGciTest
 		do: [ :assoc | 
 			| local |
 			local := self session executeString: assoc key.

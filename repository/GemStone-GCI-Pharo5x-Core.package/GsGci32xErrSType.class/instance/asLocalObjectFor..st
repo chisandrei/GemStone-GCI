@@ -12,6 +12,10 @@ asLocalObjectFor: aGciSession
 		ifTrue: [ | action actionValueOopType |
 			action := actionResult at: 1.
 			actionValueOopType := (actionResult at: 2) localObjectToGciOopType: aGciSession.
+    (action) == #'abort'
+        ifTrue: [
+	       aGciSession send: #terminate to: self context. 
+	       ^ actionResult ].
 			action == #resume
 				ifTrue: [ ^ aGciSession continueContext: self context with: actionValueOopType ].
 			self

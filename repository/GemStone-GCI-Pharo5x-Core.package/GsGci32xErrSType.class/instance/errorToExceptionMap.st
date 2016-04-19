@@ -1,3 +1,3 @@
 accessing
 errorToExceptionMap
-	^ ErrorToExceptionMap
+	^ self class errorToExceptionMap

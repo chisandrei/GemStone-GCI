@@ -1,3 +1,3 @@
-as yet unclassified
+api
 continueContext: aProcessGciOopType
 	^ self continueContext: aProcessGciOopType with: GsGciOopType oopIllegal

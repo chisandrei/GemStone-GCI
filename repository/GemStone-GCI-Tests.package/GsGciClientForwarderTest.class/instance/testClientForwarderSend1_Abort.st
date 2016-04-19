@@ -1,5 +1,5 @@
 tests
-testClientForwarderSend1_3
+testClientForwarderSend1_Abort
 	| sendResult cf sentinel |
 	cf := self clientForwarder.	"trigger client forwarder object creation"
 	self session registerClientObjectForwarderOopType: cf for: self.
@@ -9,6 +9,6 @@ testClientForwarderSend1_3
 		do: [ :ex | 
 			ex
 				resume:
-					{#resume.
+					{#abort.
 					sentinel} ].
 	self assert: sendResult equals: sentinel

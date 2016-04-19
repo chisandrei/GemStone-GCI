@@ -17,6 +17,7 @@ matrix:
      - smalltalk: GemStone-3.3.0
        env: GSCI_CLIENTS="Pharo-4.0 Pharo-3.0"
      - smalltalk: GemStone-3.2.14
+       env: GSCI_CLIENTS="Pharo-4.0 Pharo-3.0"
 
 cache:
   directories:

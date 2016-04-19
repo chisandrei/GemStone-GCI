@@ -5,7 +5,8 @@ os:
   - linux
 
 env:
-  - GSCI_CLIENTS="Pharo-5.0 Pharo-4.0 Pharo-3.0"
+  - GSCI_CLIENTS="Pharo-5.0"
+  - GSCI_CLIENTS="Pharo-4.0 Pharo-3.0"
 
 smalltalk:
   - GemStone-3.2.14
@@ -13,6 +14,8 @@ smalltalk:
 
 matrix:
    allow_failures:
+     - smalltalk: GemStone-3.3.0
+       env: GSCI_CLIENTS="Pharo-4.0 Pharo-3.0"
      - smalltalk: GemStone-3.2.14
 
 cache:

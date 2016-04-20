@@ -6,7 +6,9 @@ asLocalObjectFor: aGciSession
 	exceptionClass := self errorToExceptionMap
 		at: self number
 		ifAbsent: [ self defaultErrorExceptionClass ].
-	exception := exceptionClass gciSession: aGciSession gci32xErrSType: self.
+	exception := exceptionClass
+		gciSession: aGciSession
+		gci32xErrSType: self.
 	actionResult := exception signal.
 	actionResult isArray
 		ifTrue: [ | action actionValue |
@@ -17,14 +19,20 @@ asLocalObjectFor: aGciSession
 					^ actionValue ].
 			action == #resume
 				ifTrue: [ | actionValueOopType |
-					actionValueOopType := actionValue localObjectToGciOopType: aGciSession.
-					^ aGciSession continueContext: self context with: actionValueOopType ].
+					actionValueOopType := actionValue
+						localObjectToGciOopType: aGciSession.
+					^ aGciSession
+						continueContext: self context
+						with: actionValueOopType ].
 			action == #debug
 				ifTrue: [ ^ aGciSession clientObj debuggerRequested: actionValue ].
 			action == #logStack
-				ifTrue: [ ^ aGciSession clientObj logStackRequested: actionValue ].
+				ifTrue: [ aGciSession clientObj logStackRequested: actionValue.
+					^ STON toString: (Text fromString: 'Error stack logged to Transcript...') ].
 			self
-				error: 'Unknown action ' , action printString , ' for exception ' , exceptionClass printString ]
+				error:
+					'Unknown action ' , action printString , ' for exception '
+						, exceptionClass printString ]
 		ifFalse: [ actionResult == #resume
 				ifTrue: [ ^ aGciSession continueContext: self context ].
 			self

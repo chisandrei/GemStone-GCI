@@ -3,21 +3,28 @@ asLocalObjectFor: aGciSession
 	"at the cost of some round trips, this can be improved"
 
 	| exceptionClass exception actionResult |
-	exceptionClass := self errorToExceptionMap at: self number ifAbsent: [ GsGciError ].
+	exceptionClass := self errorToExceptionMap
+		at: self number
+		ifAbsent: [ self defaultErrorExceptionClass ].
 	exception := exceptionClass gciSession: aGciSession gci32xErrSType: self.
 	actionResult := exception signal.
 	actionResult isArray
-		ifTrue: [ | action actionValueOopType |
+		ifTrue: [ | action actionValue |
 			action := actionResult at: 1.
-			actionValueOopType := (actionResult at: 2) localObjectToGciOopType: aGciSession.
+			actionValue := actionResult at: 2.
 			action == #abort
 				ifTrue: [ aGciSession send: #terminate to: self context.
-					^ (actionResult at: 2) ].
+					^ actionValue ].
 			action == #resume
-				ifTrue: [ ^ aGciSession continueContext: self context with: actionValueOopType ].
+				ifTrue: [ | actionValueOopType |
+					actionValueOopType := actionValue localObjectToGciOopType: aGciSession.
+					^ aGciSession continueContext: self context with: actionValueOopType ].
+			action == #debug
+				ifTrue: [ ^ aGciSession clientObj debuggerRequested: actionValue ].
+			action == #logStack
+				ifTrue: [ ^ aGciSession clientObj logStackRequested: actionValue ].
 			self
-				error:
-					'Unknown action ' , action printString , ' for exception ' , exceptionClass printString ]
+				error: 'Unknown action ' , action printString , ' for exception ' , exceptionClass printString ]
 		ifFalse: [ actionResult == #resume
 				ifTrue: [ ^ aGciSession continueContext: self context ].
 			self

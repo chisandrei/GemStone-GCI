@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"theSession" ],
+		"theSession",
+		"theExceptionMap",
+		"theDefaultExceptionClass" ],
 	"name" : "GsGCiAbstractTest",
 	"pools" : [
 		 ],

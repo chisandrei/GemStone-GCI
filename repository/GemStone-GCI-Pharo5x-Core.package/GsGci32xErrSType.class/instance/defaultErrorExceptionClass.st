@@ -1,0 +1,3 @@
+accessing
+defaultErrorExceptionClass
+	^ self class defaultErrorExceptionClass

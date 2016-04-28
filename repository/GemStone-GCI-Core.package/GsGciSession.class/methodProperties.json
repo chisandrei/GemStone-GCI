@@ -26,6 +26,7 @@
 		"gciExecuteStringNB:" : "dkh 3/4/2016 10:01",
 		"gciExecuteStringNB:sourceClass:contextObject:symbolList:flags:environmentId:" : "TravisCI 4/5/2016 14:07",
 		"gciFetchObjImpl:" : "dkh 2/16/2016 08:08",
+		"gciGemTrace:" : "dkh 4/28/2016 11:23",
 		"gciI64ToOop:" : "TravisCI 4/5/2016 14:08",
 		"gciNbAbort" : "dkh 2/16/2016 08:13",
 		"gciNbBegin" : "dkh 2/16/2016 08:13",
@@ -42,7 +43,7 @@
 		"gciSaveObjs:" : "dkh 4/17/2016 16:29",
 		"gciSessionNumber" : "dkh 2/13/2016 09:57",
 		"gciSessionNumber:" : "dkh 2/13/2016 09:57",
-		"gciStep:level:" : "dkh 4/27/2016 17:35",
+		"gciStep:level:" : "dkh 4/28/2016 12:02",
 		"invalidateSession" : "dkh 4/18/2016 06:56",
 		"isObjectInPureExportSet:" : "dkh 4/18/2016 12:19",
 		"isSessionValid" : "dkh 2/13/2016 10:00",
@@ -55,4 +56,5 @@
 		"saveObjectsToPureExportSet:" : "dkh 4/18/2016 12:20",
 		"send:to:" : "dkh 3/3/2016 10:06",
 		"send:to:withArgs:" : "dkh 4/17/2016 17:02",
-		"sizeInBytesForOop" : "dkh 2/20/2016 12:26" } }
+		"sizeInBytesForOop" : "dkh 2/20/2016 12:26",
+		"stepOver:level:" : "dkh 4/28/2016 12:05" } }

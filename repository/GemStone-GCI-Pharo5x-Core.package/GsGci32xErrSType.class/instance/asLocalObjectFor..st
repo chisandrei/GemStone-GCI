@@ -28,7 +28,7 @@ asLocalObjectFor: aGciSession
 				ifTrue: [ ^ aGciSession clientObj debuggerRequested: actionValue ].
 			action == #logStack
 				ifTrue: [ aGciSession clientObj logStackRequested: actionValue.
-					^ STON toString: (Text fromString: 'Error stack logged to Transcript...') ].
+					Error signal: 'GemStone Server error: ' , actionValue ].
 			self
 				error:
 					'Unknown action ' , action printString , ' for exception '

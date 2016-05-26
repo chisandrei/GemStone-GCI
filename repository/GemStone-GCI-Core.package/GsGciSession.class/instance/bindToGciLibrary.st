@@ -10,7 +10,7 @@ bindToGciLibrary
 	library := libraryClass libraryNamed: libName.
 	library apiGciInit ifFalse: [ self error: 'GciInit(): the initialization was not successful' ].
 	gciLibraryVersion := library apiGciVersion.
-	(gciLibraryVersion beginsWith: sessionDescription gemstoneVersion)
+	(sessionDescription gemstoneVersion beginsWith: (gciLibraryVersion copyUpTo: Character space))
 		ifFalse: [ 
 			"All sessions must be using the same GemStone version - for now"
 			self

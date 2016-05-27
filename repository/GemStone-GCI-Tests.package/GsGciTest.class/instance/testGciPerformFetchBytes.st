@@ -9,4 +9,4 @@ testGciPerformFetchBytes
 		selector: #getSTONArrayString
 		args: #()
 		maxResultSize: 20.
-	self assert: (STON fromString: resultString) = {1 . 2 . 3}
+	self assert: (STON fromString: resultString) = #(1 2 3)

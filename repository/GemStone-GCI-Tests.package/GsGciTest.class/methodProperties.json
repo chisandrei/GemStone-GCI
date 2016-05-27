@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"expectedFailures" : "dkh 5/26/2016 20:07",
 		"testExceptions" : "dkh 4/17/2016 20:10",
 		"testGciExecuteString1" : "dkh 4/17/2016 20:10",
 		"testGciExecuteString2" : "dkh 4/17/2016 20:11",
@@ -13,7 +12,7 @@
 		"testGciLogin" : "dkh 4/17/2016 20:12",
 		"testGciNBExecuteString1" : "dkh 4/17/2016 20:13",
 		"testGciNBExecuteString2" : "dkh 4/17/2016 20:14",
-		"testGciPerformFetchBytes" : "dkh 5/26/2016 19:49",
+		"testGciPerformFetchBytes" : "dkh 5/27/2016 10:34",
 		"testGciWrongLogin" : "dkh 4/18/2016 12:16",
 		"testGetGciErrSType" : "dkh 4/17/2016 20:14",
 		"testLocalByteObjects" : "dkh 4/17/2016 20:14",

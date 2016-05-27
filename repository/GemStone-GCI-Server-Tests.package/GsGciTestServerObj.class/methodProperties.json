@@ -3,6 +3,7 @@
 		"doCommits:" : "dkh 03/04/2016 10:09",
 		"enableSignaledFinishTransactionErrorAndGetSessionId" : "dkh 03/04/2016 10:09",
 		"finishTransaction" : "dkh 03/04/2016 10:09",
+		"getSTONArrayString" : "dkh 05/26/2016 19:35",
 		"getStnSignalAbortCrBacklog" : "dkh 03/04/2016 10:09",
 		"sessionsReferencingOldestCr:" : "dkh 03/04/2016 10:09",
 		"sessionsReferencingOldestCrInTransactionReport:" : "dkh 03/04/2016 10:09",

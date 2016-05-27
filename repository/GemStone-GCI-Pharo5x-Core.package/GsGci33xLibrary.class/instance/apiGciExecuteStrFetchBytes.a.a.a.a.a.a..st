@@ -37,5 +37,5 @@ GciExecuteStrFetchBytes( const char* source, int64 sourceSize,
                OopType symbolList, ByteType *result, int64 maxResultSize);
 "
 
-	^ self ffiCall: #( void GciExecuteStrFetchBytes(String source, ulonglong sourceSize, GsGciOopType sourceClassOopType, GsGciOopType contextObjectOopType, GsGciOopType symbolListOopType, void *result, ulonglong maxResultSize ) )
+	^ self ffiCall: #( long GciExecuteStrFetchBytes(String source, ulonglong sourceSize, GsGciOopType sourceClassOopType, GsGciOopType contextObjectOopType, GsGciOopType symbolListOopType, void *result, ulonglong maxResultSize ) )
 	

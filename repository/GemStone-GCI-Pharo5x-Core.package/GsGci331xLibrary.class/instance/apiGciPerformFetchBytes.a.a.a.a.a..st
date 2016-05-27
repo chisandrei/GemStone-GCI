@@ -17,4 +17,4 @@ GciPerformFetchBytes(OopType receiver, const char *selector,
 
 "
 	
-	^ self ffiCall: #( void GciPerformFetchBytes(GsGciOopType receiver, String selectorString, ulong args, long numArgs, void *result, ulonglong maxResultSize) )
+	^ self ffiCall: #( longlong GciPerformFetchBytes(GsGciOopType receiver, String selectorString, ulong args, long numArgs, void *result, ulonglong maxResultSize) )

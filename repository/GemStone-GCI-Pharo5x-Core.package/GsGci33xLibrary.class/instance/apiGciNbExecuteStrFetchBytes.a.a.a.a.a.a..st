@@ -1,5 +1,5 @@
 API
-apiGciNBExecuteStrFetchBytes: source a: sourceSize a: sourceClassOopType a: contextObjectOopType a: symbolListOopType a: result a: maxResultSize
+apiGciNbExecuteStrFetchBytes: source a: sourceSize a: sourceClassOopType a: contextObjectOopType a: symbolListOopType a: result a: maxResultSize
 "/* =============================================================================
  * GciNbExecuteStrFetchBytes
  *  non blocking implementation of GciExecuteStrFetchBytes
@@ -12,5 +12,5 @@ GciNbExecuteStrFetchBytes(const char* source, int64 sourceSize, OopType sourceCl
 
 "
 
-	^ self ffiCall: #( void GciNBExecuteStrFetchBytes(String source, ulonglong sourceSize, GsGciOopType sourceClassOopType, GsGciOopType contextObjectOopType, GsGciOopType symbolListOopType, void *result, ulonglong maxResultSize ) )
+	^ self ffiCall: #( void GciNbExecuteStrFetchBytes(String source, ulonglong sourceSize, GsGciOopType sourceClassOopType, GsGciOopType contextObjectOopType, GsGciOopType symbolListOopType, void *result, ulonglong maxResultSize ) )
 	

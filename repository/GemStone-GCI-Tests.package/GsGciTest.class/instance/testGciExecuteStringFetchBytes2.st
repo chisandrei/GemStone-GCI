@@ -5,5 +5,5 @@ testGciExecuteStringFetchBytes2
 		ifTrue: [ ^ self ].	"only applies to version 3.3.0 and above"
 	resultString := self session
 		gciExecuteStringFetchBytes: 'STON toString: {1. 2. 3}'
-		maxResultSize: 20.
+		bufferSize: 20.
 	self assert: (STON fromString: resultString) = {1 . 2 . 3}

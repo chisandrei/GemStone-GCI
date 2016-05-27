@@ -1,12 +1,11 @@
 gci api - 3.3.x
-gciExecuteStringFetchBytes: source sourceClass: sourceClassOopType contextObject: contextObjectOopType symbolList: symbolListOopType maxResultSize: maxResultSize
+gciExecuteStringFetchBytes: source sourceClass: sourceClassOopType contextObject: contextObjectOopType symbolList: symbolListOopType buffer: aStringOrByteArray
 	"Only available in GemStone 3.3.x and beyond"
 
 	self checkSession.
 	self gciLibrary
 		critical: [ :lib | 
-			| result callResult |
-			result := String new: maxResultSize.
+			|  callResult |
 			callResult := lib
 				apiGciSetSessionId: gciSessionNumber;
 				apiGciExecuteStrFetchBytes: source
@@ -14,8 +13,8 @@ gciExecuteStringFetchBytes: source sourceClass: sourceClassOopType contextObject
 					a: sourceClassOopType
 					a: contextObjectOopType
 					a: symbolListOopType
-					a: result
-					a: maxResultSize.
+					a: aStringOrByteArray
+					a: aStringOrByteArray size.
 			^ callResult == -1
 				ifTrue: [ nil gciResultToGsOopType: self	"error" ]
-				ifFalse: [ result copyFrom: 1 to: callResult	"result" ] ]
+				ifFalse: [ aStringOrByteArray copyFrom: 1 to: callResult	"result" ] ]

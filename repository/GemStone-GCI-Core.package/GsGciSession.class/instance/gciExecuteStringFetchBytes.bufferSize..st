@@ -1,5 +1,5 @@
 gci api - 3.3.x
-gciExecuteStringFetchBytes: source  maxResultSize: maxResultSize
+gciExecuteStringFetchBytes: source bufferSize: bufferSize
 	"Only available in GemStone 3.3.x and beyond"
 
 	^ self
@@ -7,4 +7,4 @@ gciExecuteStringFetchBytes: source  maxResultSize: maxResultSize
 		sourceClass: GsGciOopType oopClassString
 		contextObject: GsGciOopType oopNoContext
 		symbolList: GsGciOopType oopNil
-		maxResultSize: maxResultSize
+		bufferSize: bufferSize

@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"testExceptions" : "dkh 4/17/2016 20:10",
+		"testExecuteStringFetchBytesRaw" : "dkh 6/15/2016 15:31",
 		"testGciExecuteString1" : "dkh 4/17/2016 20:10",
 		"testGciExecuteString2" : "dkh 4/17/2016 20:11",
 		"testGciExecuteStringError" : "dkh 6/15/2016 06:11",

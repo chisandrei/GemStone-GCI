@@ -1,4 +1,4 @@
-as yet unclassified
+gci api - non-blocking
 gciNbEnd_OnNotReady: notReadyBlock onReadyRaw: readyBlock onError: errorBlock
 	self checkSession.
 	self gciLibrary

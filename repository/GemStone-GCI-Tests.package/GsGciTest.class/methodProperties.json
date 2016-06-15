@@ -21,6 +21,7 @@
 		"testLocalByteObjectsToGciOopType" : "dkh 4/17/2016 20:15",
 		"testLocalSpecialObjectsToGciOopType" : "dkh 4/17/2016 20:15",
 		"testLocalSpecials" : "dkh 4/18/2016 20:29",
+		"testSendFetchBytesTo1" : "dkh 6/14/2016 20:27",
 		"testSendTo1" : "dkh 4/17/2016 20:16",
 		"testSigAbortHandling" : "dkh 4/18/2016 20:42",
 		"testSigAbortHandlingNew" : "dkh 4/18/2016 20:42" } }

@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
+		"asLocalObjectFor:ifNotConverted:" : "dkh 6/15/2016 06:05",
 		"gsGciPerformFromServer:with:using:" : "dkh 4/18/2016 16:57",
 		"localObjectToGciOopType:" : "dkh 4/19/2016 20:37" } }

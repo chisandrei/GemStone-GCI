@@ -2,7 +2,7 @@
 	"class" : {
 		"login:" : "dkh 2/13/2016 08:06" },
 	"instance" : {
-		"checkSession" : "dkh 2/13/2016 18:04",
+		"checkSession" : "TravisCI 7/23/2016 06:24",
 		"clientObj" : "dkh 4/19/2016 15:40",
 		"clientObj:" : "dkh 4/19/2016 15:40",
 		"createLocalObjectFrom:ifNotConverted:" : "dkh 2/14/2016 07:26",

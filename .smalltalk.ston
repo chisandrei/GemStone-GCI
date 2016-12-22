@@ -12,5 +12,8 @@ SmalltalkCISpec {
       #directory : 'repository',
       #platforms : [ #gemstone, #pharo ]
     }
-  ]
+  ],
+  #testing : {
+    #failOnZeroTests : false
+  }
 }

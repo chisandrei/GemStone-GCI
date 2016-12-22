@@ -43,4 +43,4 @@ GciNbStep(OopType process,int    level); /* through == FALSE */
 GciNbStep_(OopType process,int level, BoolType through);
 "
 	
-	^ self ffiCall: #( GsGciOopType GciStep( GsGciOopType process, int level, int through ) )
+	^ self ffiCall: #( GsGciOopType GciStep_( GsGciOopType process, int level, int through ) )

@@ -45,7 +45,7 @@ baseline: spec
 						includes: #('GemStone-GCI-Pharo3x-Core') ];
 				yourself ].
 	spec
-		for: #(#'pharo5.x')
+		for: #(#'pharo5.x' #'pharo6.x')
 		do: [ spec
 				configuration: 'UnifiedFFI'
 					with: [ spec
